@@ -1,11 +1,11 @@
-package cn.stylefeng.guns.modular.doctor_point.service;
+package cn.stylefeng.1466951331.modular.doctor_point.service;
 
-import cn.stylefeng.guns.modular.system.model.DoctorPoint;
+import cn.stylefeng.1466951331.modular.system.model.DoctorPoint;
 import com.baomidou.mybatisplus.service.IService;
 
 /**
  * <p>
- *  服务类
+ *  服务�?
  * </p>
  *
  * @author zxx

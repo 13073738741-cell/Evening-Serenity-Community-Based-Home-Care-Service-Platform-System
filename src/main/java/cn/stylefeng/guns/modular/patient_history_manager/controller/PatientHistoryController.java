@@ -1,4 +1,4 @@
-package cn.stylefeng.guns.modular.patient_history_manager.controller;
+package cn.stylefeng.1466951331.modular.patient_history_manager.controller;
 
 import cn.stylefeng.roses.core.base.controller.BaseController;
 import org.springframework.stereotype.Controller;
@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.beans.factory.annotation.Autowired;
-import cn.stylefeng.guns.core.log.LogObjectHolder;
+import cn.stylefeng.1466951331.core.log.LogObjectHolder;
 import org.springframework.web.bind.annotation.RequestParam;
-import cn.stylefeng.guns.modular.system.model.PatientHistory;
-import cn.stylefeng.guns.modular.patient_history_manager.service.IPatientHistoryService;
+import cn.stylefeng.1466951331.modular.system.model.PatientHistory;
+import cn.stylefeng.1466951331.modular.patient_history_manager.service.IPatientHistoryService;
 
 /**
- * 居民就诊历史管理控制器
+ * 居民就诊历史管理控制�?
  *
  * @author fengshuonan
  * @Date 2018-12-29 17:16:39
@@ -28,7 +28,7 @@ public class PatientHistoryController extends BaseController {
     private IPatientHistoryService patientHistoryService;
 
     /**
-     * 跳转到居民就诊历史管理首页
+     * 跳转到居民就诊历史管理首�?
      */
     @RequestMapping("")
     public String index() {
@@ -36,7 +36,7 @@ public class PatientHistoryController extends BaseController {
     }
 
     /**
-     * 跳转到添加居民就诊历史管理
+     * 跳转到添加居民就诊历史管�?
      */
     @RequestMapping("/patientHistory_add")
     public String patientHistoryAdd() {
@@ -44,7 +44,7 @@ public class PatientHistoryController extends BaseController {
     }
 
     /**
-     * 跳转到修改居民就诊历史管理
+     * 跳转到修改居民就诊历史管�?
      */
     @RequestMapping("/patientHistory_update/{patientHistoryId}")
     public String patientHistoryUpdate(@PathVariable Integer patientHistoryId, Model model) {

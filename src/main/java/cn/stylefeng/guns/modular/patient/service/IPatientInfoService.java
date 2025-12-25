@@ -1,11 +1,11 @@
-package cn.stylefeng.guns.modular.patient.service;
+package cn.stylefeng.1466951331.modular.patient.service;
 
-import cn.stylefeng.guns.modular.system.model.PatientInfo;
+import cn.stylefeng.1466951331.modular.system.model.PatientInfo;
 import com.baomidou.mybatisplus.service.IService;
 
 /**
  * <p>
- *  服务类
+ *  服务�?
  * </p>
  *
  * @author stylefeng

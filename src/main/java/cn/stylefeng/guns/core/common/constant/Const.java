@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.common.constant;
+package cn.stylefeng.1466951331.core.common.constant;
 
 /**
  * 系统常量
  *
  * @author fengshuonan
- * @date 2017年2月12日 下午9:42:53
+ * @date 2017�?�?2�?下午9:42:53
  */
 public interface Const {
 

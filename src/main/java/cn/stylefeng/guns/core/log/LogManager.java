@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.log;
+package cn.stylefeng.1466951331.core.log;
 
 import java.util.TimerTask;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 日志管理器
+ * 日志管理�?
  *
  * @author fengshuonan
  * @date 2017-03-30 16:29

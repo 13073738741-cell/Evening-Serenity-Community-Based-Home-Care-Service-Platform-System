@@ -1,4 +1,4 @@
-package cn.stylefeng.guns.multi.entity;
+package cn.stylefeng.1466951331.multi.entity;
 
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.enums.IdType;

@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.modular.system.dao;
+package cn.stylefeng.1466951331.modular.system.dao;
 
-import cn.stylefeng.guns.modular.system.model.Relation;
+import cn.stylefeng.1466951331.modular.system.model.Relation;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 
 /**

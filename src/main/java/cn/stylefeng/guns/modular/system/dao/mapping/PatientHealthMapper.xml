@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.stylefeng.guns.modular.system.dao.PatientHealthMapper">
+<mapper namespace="cn.stylefeng.1466951331.modular.system.dao.PatientHealthMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.modular.system.model.PatientHealth">
+    <resultMap id="BaseResultMap" type="cn.stylefeng.1466951331.modular.system.model.PatientHealth">
         <id column="id" property="id" />
         <result column="heart_jump" property="heartJump" />
         <result column="blood_pressure" property="bloodPressure" />
@@ -14,7 +14,7 @@
         <result column="patient_name" property="patientName" />
     </resultMap>
 
-    <!-- 通用查询结果列 -->
+    <!-- 通用查询结果�?-->
     <sql id="Base_Column_List">
         id, heart_jump, blood_pressure, blood_ox, pulse, date, patient_idcard, patient_name
     </sql>

@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.common.node;
+package cn.stylefeng.1466951331.core.common.node;
 
 /**
- * jquery ztree 插件的节点
+ * jquery ztree 插件的节�?
  *
  * @author fengshuonan
- * @date 2017年2月17日 下午8:25:14
+ * @date 2017�?�?7�?下午8:25:14
  */
 public class ZTreeNode {
 

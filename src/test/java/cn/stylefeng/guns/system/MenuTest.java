@@ -1,8 +1,8 @@
-package cn.stylefeng.guns.system;
+package cn.stylefeng.1466951331.system;
 
-import cn.stylefeng.guns.base.BaseJunit;
-import cn.stylefeng.guns.modular.system.dao.MenuMapper;
-import cn.stylefeng.guns.modular.system.model.Menu;
+import cn.stylefeng.1466951331.base.BaseJunit;
+import cn.stylefeng.1466951331.modular.system.dao.MenuMapper;
+import cn.stylefeng.1466951331.modular.system.model.Menu;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.mapper.Wrapper;
 import org.junit.Test;

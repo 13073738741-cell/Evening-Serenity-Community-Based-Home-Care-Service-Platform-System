@@ -13,17 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.common.constant.factory;
+package cn.stylefeng.1466951331.core.common.constant.factory;
 
 import cn.hutool.core.convert.Convert;
 import cn.hutool.core.util.StrUtil;
-import cn.stylefeng.guns.core.common.constant.cache.Cache;
-import cn.stylefeng.guns.core.common.constant.cache.CacheKey;
-import cn.stylefeng.guns.core.common.constant.state.ManagerStatus;
-import cn.stylefeng.guns.core.common.constant.state.MenuStatus;
-import cn.stylefeng.guns.core.log.LogObjectHolder;
-import cn.stylefeng.guns.modular.system.dao.*;
-import cn.stylefeng.guns.modular.system.model.*;
+import cn.stylefeng.1466951331.core.common.constant.cache.Cache;
+import cn.stylefeng.1466951331.core.common.constant.cache.CacheKey;
+import cn.stylefeng.1466951331.core.common.constant.state.ManagerStatus;
+import cn.stylefeng.1466951331.core.common.constant.state.MenuStatus;
+import cn.stylefeng.1466951331.core.log.LogObjectHolder;
+import cn.stylefeng.1466951331.modular.system.dao.*;
+import cn.stylefeng.1466951331.modular.system.model.*;
 import cn.stylefeng.roses.core.util.SpringContextHolder;
 import cn.stylefeng.roses.core.util.ToolUtil;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
@@ -36,10 +36,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 常量的生产工厂
+ * 常量的生产工�?
  *
  * @author fengshuonan
- * @date 2017年2月13日 下午10:55:21
+ * @date 2017�?�?3�?下午10:55:21
  */
 @Component
 @DependsOn("springContextHolder")
@@ -76,7 +76,7 @@ public class ConstantFactory implements IConstantFactory {
      * 根据用户id获取用户账号
      *
      * @author stylefeng
-     * @date 2017年5月16日21:55:371
+     * @date 2017�?�?6�?1:55:371
      */
     @Override
     public String getUserAccountById(Integer userId) {
@@ -271,7 +271,7 @@ public class ConstantFactory implements IConstantFactory {
     }
 
     /**
-     * 获取用户登录状态
+     * 获取用户登录状�?
      */
     @Override
     public String getStatusName(Integer status) {
@@ -279,7 +279,7 @@ public class ConstantFactory implements IConstantFactory {
     }
 
     /**
-     * 获取菜单状态
+     * 获取菜单状�?
      */
     @Override
     public String getMenuStatusName(Integer status) {

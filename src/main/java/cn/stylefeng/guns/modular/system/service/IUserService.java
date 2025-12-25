@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.modular.system.service;
+package cn.stylefeng.1466951331.modular.system.service;
 
-import cn.stylefeng.guns.modular.system.model.User;
+import cn.stylefeng.1466951331.modular.system.model.User;
 import cn.stylefeng.roses.core.datascope.DataScope;
 import com.baomidou.mybatisplus.service.IService;
 
@@ -24,7 +24,7 @@ import java.util.Map;
 
 /**
  * <p>
- * 管理员表 服务类
+ * 管理员表 服务�?
  * </p>
  *
  * @author stylefeng123
@@ -33,7 +33,7 @@ import java.util.Map;
 public interface IUserService extends IService<User> {
 
     /**
-     * 修改用户状态
+     * 修改用户状�?
      */
     int setStatus(Integer userId, int status);
 
@@ -48,7 +48,7 @@ public interface IUserService extends IService<User> {
     List<Map<String, Object>> selectUsers(DataScope dataScope, String name, String beginTime, String endTime, Integer deptid);
 
     /**
-     * 设置用户的角色
+     * 设置用户的角�?
      */
     int setRoles(Integer userId, String roleIds);
 

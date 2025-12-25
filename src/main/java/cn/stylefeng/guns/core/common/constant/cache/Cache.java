@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.common.constant.cache;
+package cn.stylefeng.1466951331.core.common.constant.cache;
 
 /**
  * 所有缓存名称的集合

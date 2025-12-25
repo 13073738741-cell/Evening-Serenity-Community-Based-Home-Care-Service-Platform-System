@@ -1,8 +1,8 @@
-package cn.stylefeng.guns.system;
+package cn.stylefeng.1466951331.system;
 
-import cn.stylefeng.guns.base.BaseJunit;
-import cn.stylefeng.guns.modular.system.dao.DeptMapper;
-import cn.stylefeng.guns.modular.system.model.Dept;
+import cn.stylefeng.1466951331.base.BaseJunit;
+import cn.stylefeng.1466951331.modular.system.dao.DeptMapper;
+import cn.stylefeng.1466951331.modular.system.model.Dept;
 import org.junit.Test;
 
 import javax.annotation.Resource;
@@ -53,7 +53,7 @@ public class DeptTest extends BaseJunit {
 
     @Test
     public void listTest() {
-        List<Map<String, Object>> list = this.deptMapper.list("总公司");
+        List<Map<String, Object>> list = this.deptMapper.list("总公�?);
         assertTrue(list.size() > 0);
     }
 }

@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.beetl;
+package cn.stylefeng.1466951331.core.beetl;
 
-import cn.stylefeng.guns.core.shiro.ShiroUser;
+import cn.stylefeng.1466951331.core.shiro.ShiroUser;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
 
@@ -32,7 +32,7 @@ public class ShiroExt {
     }
 
     /**
-     * 获取封装的 ShiroUser
+     * 获取封装�?ShiroUser
      *
      * @return ShiroUser
      */
@@ -47,7 +47,7 @@ public class ShiroExt {
     /**
      * 验证当前用户是否属于该角色？,使用时与lacksRole 搭配使用
      *
-     * @param roleName 角色名
+     * @param roleName 角色�?
      * @return 属于该角色：true，否则false
      */
     public boolean hasRole(String roleName) {
@@ -56,9 +56,9 @@ public class ShiroExt {
     }
 
     /**
-     * 与hasRole标签逻辑相反，当用户不属于该角色时验证通过。
+     * 与hasRole标签逻辑相反，当用户不属于该角色时验证通过�?
      *
-     * @param roleName 角色名
+     * @param roleName 角色�?
      * @return 不属于该角色：true，否则false
      */
     public boolean lacksRole(String roleName) {
@@ -66,7 +66,7 @@ public class ShiroExt {
     }
 
     /**
-     * 验证当前用户是否属于以下任意一个角色。
+     * 验证当前用户是否属于以下任意一个角色�?
      *
      * @param roleNames 角色列表
      * @return 属于:true,否则false
@@ -86,7 +86,7 @@ public class ShiroExt {
     }
 
     /**
-     * 验证当前用户是否属于以下所有角色。
+     * 验证当前用户是否属于以下所有角色�?
      *
      * @param roleNames 角色列表
      * @return 属于:true,否则false
@@ -108,7 +108,7 @@ public class ShiroExt {
     /**
      * 验证当前用户是否拥有指定权限,使用时与lacksPermission 搭配使用
      *
-     * @param permission 权限名
+     * @param permission 权限�?
      * @return 拥有权限：true，否则false
      */
     public boolean hasPermission(String permission) {
@@ -118,9 +118,9 @@ public class ShiroExt {
     }
 
     /**
-     * 与hasPermission标签逻辑相反，当前用户没有制定权限时，验证通过。
+     * 与hasPermission标签逻辑相反，当前用户没有制定权限时，验证通过�?
      *
-     * @param permission 权限名
+     * @param permission 权限�?
      * @return 拥有权限：true，否则false
      */
     public boolean lacksPermission(String permission) {
@@ -137,7 +137,7 @@ public class ShiroExt {
     }
 
     /**
-     * 未认证通过用户，与authenticated标签相对应。与guest标签的区别是，该标签包含已记住用户。。
+     * 未认证通过用户，与authenticated标签相对应。与guest标签的区别是，该标签包含已记住用户。�?
      *
      * @return 没有通过身份验证：true，否则false
      */
@@ -146,9 +146,9 @@ public class ShiroExt {
     }
 
     /**
-     * 认证通过或已记住的用户。与guset搭配使用。
+     * 认证通过或已记住的用户。与guset搭配使用�?
      *
-     * @return 用户：true，否则 false
+     * @return 用户：true，否�?false
      */
     public boolean isUser() {
         return getSubject() != null && getSubject().getPrincipal() != null;
@@ -164,7 +164,7 @@ public class ShiroExt {
     }
 
     /**
-     * 输出当前用户信息，通常为登录帐号信息。
+     * 输出当前用户信息，通常为登录帐号信息�?
      *
      * @return 当前用户信息
      */

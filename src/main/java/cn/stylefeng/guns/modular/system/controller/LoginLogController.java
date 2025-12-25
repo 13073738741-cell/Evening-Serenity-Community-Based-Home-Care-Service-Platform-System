@@ -13,16 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.modular.system.controller;
+package cn.stylefeng.1466951331.modular.system.controller;
 
-import cn.stylefeng.guns.core.common.annotion.BussinessLog;
-import cn.stylefeng.guns.core.common.annotion.Permission;
-import cn.stylefeng.guns.core.common.constant.Const;
-import cn.stylefeng.guns.core.common.constant.factory.PageFactory;
-import cn.stylefeng.guns.core.common.page.PageInfoBT;
-import cn.stylefeng.guns.modular.system.model.LoginLog;
-import cn.stylefeng.guns.modular.system.service.ILoginLogService;
-import cn.stylefeng.guns.modular.system.warpper.LogWarpper;
+import cn.stylefeng.1466951331.core.common.annotion.BussinessLog;
+import cn.stylefeng.1466951331.core.common.annotion.Permission;
+import cn.stylefeng.1466951331.core.common.constant.Const;
+import cn.stylefeng.1466951331.core.common.constant.factory.PageFactory;
+import cn.stylefeng.1466951331.core.common.page.PageInfoBT;
+import cn.stylefeng.1466951331.modular.system.model.LoginLog;
+import cn.stylefeng.1466951331.modular.system.service.ILoginLogService;
+import cn.stylefeng.1466951331.modular.system.warpper.LogWarpper;
 import cn.stylefeng.roses.core.base.controller.BaseController;
 import com.baomidou.mybatisplus.mapper.SqlRunner;
 import com.baomidou.mybatisplus.plugins.Page;
@@ -39,7 +39,7 @@ import java.util.Map;
  * 日志管理的控制器
  *
  * @author fengshuonan
- * @Date 2017年4月5日 19:45:36
+ * @Date 2017�?�?�?19:45:36
  */
 @Controller
 @RequestMapping("/loginLog")

@@ -13,18 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.common.constant.state;
+package cn.stylefeng.1466951331.core.common.constant.state;
 
 /**
  * 是否是菜单的枚举
  *
  * @author fengshuonan
- * @date 2017年6月1日22:50:11
+ * @date 2017�?�?�?2:50:11
  */
 public enum ExpenseState {
 
-    SUBMITING(1, "待提交"),
-    CHECKING(2, "待审核"),
+    SUBMITING(1, "待提�?),
+    CHECKING(2, "待审�?),
     PASS(3, "审核通过"),
     UN_PASS(4, "未通过");
 

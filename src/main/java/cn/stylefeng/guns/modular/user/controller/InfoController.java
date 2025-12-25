@@ -1,4 +1,4 @@
-package cn.stylefeng.guns.modular.user.controller;
+package cn.stylefeng.1466951331.modular.user.controller;
 
 import cn.stylefeng.roses.core.base.controller.BaseController;
 import org.springframework.stereotype.Controller;
@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.beans.factory.annotation.Autowired;
-import cn.stylefeng.guns.core.log.LogObjectHolder;
+import cn.stylefeng.1466951331.core.log.LogObjectHolder;
 import org.springframework.web.bind.annotation.RequestParam;
-import cn.stylefeng.guns.modular.system.model.Info;
-import cn.stylefeng.guns.modular.user.service.IInfoService;
+import cn.stylefeng.1466951331.modular.system.model.Info;
+import cn.stylefeng.1466951331.modular.user.service.IInfoService;
 
 /**
- * 病人控制器
+ * 病人控制�?
  *
  * @author fengshuonan
  * @Date 2018-12-29 14:09:37
@@ -28,7 +28,7 @@ public class InfoController extends BaseController {
     private IInfoService infoService;
 
     /**
-     * 跳转到病人首页
+     * 跳转到病人首�?
      */
     @RequestMapping("")
     public String index() {
@@ -36,7 +36,7 @@ public class InfoController extends BaseController {
     }
 
     /**
-     * 跳转到添加病人
+     * 跳转到添加病�?
      */
     @RequestMapping("/info_add")
     public String infoAdd() {
@@ -44,7 +44,7 @@ public class InfoController extends BaseController {
     }
 
     /**
-     * 跳转到修改病人
+     * 跳转到修改病�?
      */
     @RequestMapping("/info_update/{infoId}")
     public String infoUpdate(@PathVariable Integer infoId, Model model) {

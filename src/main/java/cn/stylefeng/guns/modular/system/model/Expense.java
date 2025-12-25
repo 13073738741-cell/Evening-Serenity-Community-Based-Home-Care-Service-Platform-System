@@ -1,4 +1,4 @@
-package cn.stylefeng.guns.modular.system.model;
+package cn.stylefeng.1466951331.modular.system.model;
 
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableId;
@@ -11,7 +11,7 @@ import java.util.Date;
 
 /**
  * <p>
- * 报销表
+ * 报销�?
  * </p>
  *
  * @author stylefeng
@@ -34,7 +34,7 @@ public class Expense extends Model<Expense> {
     private String desc;
     private Date createtime;
     /**
-     * 状态: 1.待提交  2:待审核   3.审核通过
+     * 状�? 1.待提�? 2:待审�?  3.审核通过
      */
     private Integer state;
     /**

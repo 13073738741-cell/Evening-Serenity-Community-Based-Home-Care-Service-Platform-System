@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.modular.system.dao;
+package cn.stylefeng.1466951331.modular.system.dao;
 
-import cn.stylefeng.guns.modular.system.model.Expense;
+import cn.stylefeng.1466951331.modular.system.model.Expense;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 
 /**
  * <p>
- * 报销表 Mapper 接口
+ * 报销�?Mapper 接口
  * </p>
  *
  * @author stylefeng

@@ -1,8 +1,8 @@
-package cn.stylefeng.guns.multi.service;
+package cn.stylefeng.1466951331.multi.service;
 
 /**
  * <p>
- * 服务类
+ * 服务�?
  * </p>
  *
  * @author fengshuonan
@@ -11,7 +11,7 @@ package cn.stylefeng.guns.multi.service;
 public interface TestService {
 
     /**
-     * 测试多数据源的业务
+     * 测试多数据源的业�?
      *
      * @author stylefeng
      * @Date 2017/6/23 23:02
@@ -19,11 +19,11 @@ public interface TestService {
     void testBiz();
 
     /**
-     * 测试多数据源的业务
+     * 测试多数据源的业�?
      *
      * @author stylefeng
      * @Date 2017/6/23 23:02
      */
-    void testGuns();
+    void test1466951331();
 
 }

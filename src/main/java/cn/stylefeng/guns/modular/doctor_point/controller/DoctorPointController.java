@@ -1,4 +1,4 @@
-package cn.stylefeng.guns.modular.doctor_point.controller;
+package cn.stylefeng.1466951331.modular.doctor_point.controller;
 
 import cn.stylefeng.roses.core.base.controller.BaseController;
 import org.springframework.stereotype.Controller;
@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.beans.factory.annotation.Autowired;
-import cn.stylefeng.guns.core.log.LogObjectHolder;
+import cn.stylefeng.1466951331.core.log.LogObjectHolder;
 import org.springframework.web.bind.annotation.RequestParam;
-import cn.stylefeng.guns.modular.system.model.DoctorPoint;
-import cn.stylefeng.guns.modular.doctor_point.service.IDoctorPointService;
+import cn.stylefeng.1466951331.modular.system.model.DoctorPoint;
+import cn.stylefeng.1466951331.modular.doctor_point.service.IDoctorPointService;
 
 /**
- * 医生预约控制器
+ * 医生预约控制�?
  *
  * @author fengshuonan
  * @Date 2018-12-29 17:57:59
@@ -28,7 +28,7 @@ public class DoctorPointController extends BaseController {
     private IDoctorPointService doctorPointService;
 
     /**
-     * 跳转到医生预约首页
+     * 跳转到医生预约首�?
      */
     @RequestMapping("")
     public String index() {
@@ -36,7 +36,7 @@ public class DoctorPointController extends BaseController {
     }
 
     /**
-     * 跳转到添加医生预约
+     * 跳转到添加医生预�?
      */
     @RequestMapping("/doctorPoint_add")
     public String doctorPointAdd() {
@@ -44,7 +44,7 @@ public class DoctorPointController extends BaseController {
     }
 
     /**
-     * 跳转到修改医生预约
+     * 跳转到修改医生预�?
      */
     @RequestMapping("/doctorPoint_update/{doctorPointId}")
     public String doctorPointUpdate(@PathVariable Integer doctorPointId, Model model) {

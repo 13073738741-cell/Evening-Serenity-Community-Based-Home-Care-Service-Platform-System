@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.common.constant.state;
+package cn.stylefeng.1466951331.core.common.constant.state;
 
 /**
- * 菜单是否打开的状态
+ * 菜单是否打开的状�?
  *
  * @author fengshuonan
- * @Date 2017年4月8日10:12:15
+ * @Date 2017�?�?�?0:12:15
  */
 public enum MenuOpenStatus {
 

@@ -1,4 +1,4 @@
-package cn.stylefeng.guns.modular.pateint_health_manager.controller;
+package cn.stylefeng.1466951331.modular.pateint_health_manager.controller;
 
 import cn.stylefeng.roses.core.base.controller.BaseController;
 import org.springframework.stereotype.Controller;
@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.beans.factory.annotation.Autowired;
-import cn.stylefeng.guns.core.log.LogObjectHolder;
+import cn.stylefeng.1466951331.core.log.LogObjectHolder;
 import org.springframework.web.bind.annotation.RequestParam;
-import cn.stylefeng.guns.modular.system.model.PatientHealth;
-import cn.stylefeng.guns.modular.pateint_health_manager.service.IPatientHealthService;
+import cn.stylefeng.1466951331.modular.system.model.PatientHealth;
+import cn.stylefeng.1466951331.modular.pateint_health_manager.service.IPatientHealthService;
 
 /**
- * 居民健康信息管理控制器
+ * 居民健康信息管理控制�?
  *
  * @author fengshuonan
  * @Date 2018-12-29 16:51:07
@@ -28,7 +28,7 @@ public class PatientHealthController extends BaseController {
     private IPatientHealthService patientHealthService;
 
     /**
-     * 跳转到居民健康信息管理首页
+     * 跳转到居民健康信息管理首�?
      */
     @RequestMapping("")
     public String index() {
@@ -36,7 +36,7 @@ public class PatientHealthController extends BaseController {
     }
 
     /**
-     * 跳转到添加居民健康信息管理
+     * 跳转到添加居民健康信息管�?
      */
     @RequestMapping("/patientHealth_add")
     public String patientHealthAdd() {
@@ -44,7 +44,7 @@ public class PatientHealthController extends BaseController {
     }
 
     /**
-     * 跳转到修改居民健康信息管理
+     * 跳转到修改居民健康信息管�?
      */
     @RequestMapping("/patientHealth_update/{patientHealthId}")
     public String patientHealthUpdate(@PathVariable Integer patientHealthId, Model model) {

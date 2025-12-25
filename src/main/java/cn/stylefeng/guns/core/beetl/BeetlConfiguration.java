@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.beetl;
+package cn.stylefeng.1466951331.core.beetl;
 
-import cn.stylefeng.guns.core.tag.DictSelectorTag;
-import cn.stylefeng.guns.core.util.KaptchaUtil;
+import cn.stylefeng.1466951331.core.tag.DictSelectorTag;
+import cn.stylefeng.1466951331.core.util.KaptchaUtil;
 import cn.stylefeng.roses.core.util.ToolUtil;
 import org.beetl.core.Context;
 import org.beetl.core.Function;

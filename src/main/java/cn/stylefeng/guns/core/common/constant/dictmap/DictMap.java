@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.common.constant.dictmap;
+package cn.stylefeng.1466951331.core.common.constant.dictmap;
 
-import cn.stylefeng.guns.core.common.constant.dictmap.base.AbstractDictMap;
+import cn.stylefeng.1466951331.core.common.constant.dictmap.base.AbstractDictMap;
 
 /**
  * 字典map

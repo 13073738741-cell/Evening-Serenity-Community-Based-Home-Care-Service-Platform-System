@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.common.constant.dictmap;
+package cn.stylefeng.1466951331.core.common.constant.dictmap;
 
-import cn.stylefeng.guns.core.common.constant.dictmap.base.AbstractDictMap;
+import cn.stylefeng.1466951331.core.common.constant.dictmap.base.AbstractDictMap;
 
 /**
- * 日志的字典
+ * 日志的字�?
  *
  * @author fengshuonan
  * @date 2017-05-06 15:01

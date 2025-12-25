@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.util;
+package cn.stylefeng.1466951331.core.util;
 
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.StrUtil;
-import cn.stylefeng.guns.core.common.constant.dictmap.base.AbstractDictMap;
-import cn.stylefeng.guns.core.common.constant.dictmap.factory.DictFieldWarpperFactory;
+import cn.stylefeng.1466951331.core.common.constant.dictmap.base.AbstractDictMap;
+import cn.stylefeng.1466951331.core.common.constant.dictmap.factory.DictFieldWarpperFactory;
 
 import java.beans.PropertyDescriptor;
 import java.lang.reflect.Field;
@@ -27,7 +27,7 @@ import java.util.Date;
 import java.util.Map;
 
 /**
- * 对比两个对象的变化的工具类
+ * 对比两个对象的变化的工具�?
  *
  * @author fengshuonan
  * @Date 2017/3/31 10:36
@@ -67,7 +67,7 @@ public class Contrast {
                     if (i != 1) {
                         str += separator;
                     }
-                    str += "字段名称" + field.getName() + ",旧值:" + o1 + ",新值:" + o2;
+                    str += "字段名称" + field.getName() + ",旧�?" + o1 + ",新�?" + o2;
                     i++;
                 }
             }
@@ -78,7 +78,7 @@ public class Contrast {
     }
 
     /**
-     * 比较两个对象pojo1和pojo2,并输出不一致信息
+     * 比较两个对象pojo1和pojo2,并输出不一致信�?
      *
      * @author stylefeng
      * @Date 2017/5/9 19:34
@@ -115,9 +115,9 @@ public class Contrast {
                     if (fieldWarpperMethodName != null) {
                         Object o1Warpper = DictFieldWarpperFactory.createFieldWarpper(o1, fieldWarpperMethodName);
                         Object o2Warpper = DictFieldWarpperFactory.createFieldWarpper(o2, fieldWarpperMethodName);
-                        str += "字段名称:" + fieldName + ",旧值:" + o1Warpper + ",新值:" + o2Warpper;
+                        str += "字段名称:" + fieldName + ",旧�?" + o1Warpper + ",新�?" + o2Warpper;
                     } else {
-                        str += "字段名称:" + fieldName + ",旧值:" + o1 + ",新值:" + o2;
+                        str += "字段名称:" + fieldName + ",旧�?" + o1 + ",新�?" + o2;
                     }
                     i++;
                 }
@@ -129,7 +129,7 @@ public class Contrast {
     }
 
     /**
-     * 比较两个对象pojo1和pojo2,并输出不一致信息
+     * 比较两个对象pojo1和pojo2,并输出不一致信�?
      *
      * @author stylefeng
      * @Date 2017/5/9 19:34
@@ -177,9 +177,9 @@ public class Contrast {
                     if (fieldWarpperMethodName != null) {
                         Object o1Warpper = DictFieldWarpperFactory.createFieldWarpper(o1, fieldWarpperMethodName);
                         Object o2Warpper = DictFieldWarpperFactory.createFieldWarpper(o2, fieldWarpperMethodName);
-                        str += "字段名称:" + fieldName + ",旧值:" + o1Warpper + ",新值:" + o2Warpper;
+                        str += "字段名称:" + fieldName + ",旧�?" + o1Warpper + ",新�?" + o2Warpper;
                     } else {
-                        str += "字段名称:" + fieldName + ",旧值:" + o1 + ",新值:" + o2;
+                        str += "字段名称:" + fieldName + ",旧�?" + o1 + ",新�?" + o2;
                     }
                     i++;
                 }
@@ -191,7 +191,7 @@ public class Contrast {
     }
 
     /**
-     * 解析多个key(逗号隔开的)
+     * 解析多个key(逗号隔开�?
      *
      * @author stylefeng
      * @Date 2017/5/16 22:19

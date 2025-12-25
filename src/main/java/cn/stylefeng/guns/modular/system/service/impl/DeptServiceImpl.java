@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.modular.system.service.impl;
+package cn.stylefeng.1466951331.modular.system.service.impl;
 
-import cn.stylefeng.guns.core.common.node.ZTreeNode;
-import cn.stylefeng.guns.modular.system.dao.DeptMapper;
-import cn.stylefeng.guns.modular.system.model.Dept;
-import cn.stylefeng.guns.modular.system.service.IDeptService;
+import cn.stylefeng.1466951331.core.common.node.ZTreeNode;
+import cn.stylefeng.1466951331.modular.system.dao.DeptMapper;
+import cn.stylefeng.1466951331.modular.system.model.Dept;
+import cn.stylefeng.1466951331.modular.system.service.IDeptService;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;

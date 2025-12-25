@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.common.constant.state;
+package cn.stylefeng.1466951331.core.common.constant.state;
 
 /**
- * 业务是否成功的日志记录
+ * 业务是否成功的日志记�?
  *
  * @author fengshuonan
- * @Date 2017年1月22日 下午12:14:59
+ * @Date 2017�?�?2�?下午12:14:59
  */
 public enum LogSucceed {
 

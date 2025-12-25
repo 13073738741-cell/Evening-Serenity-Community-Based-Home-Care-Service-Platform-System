@@ -1,7 +1,7 @@
-package cn.stylefeng.guns.system;
+package cn.stylefeng.1466951331.system;
 
-import cn.stylefeng.guns.base.BaseJunit;
-import cn.stylefeng.guns.modular.system.dao.UserMapper;
+import cn.stylefeng.1466951331.base.BaseJunit;
+import cn.stylefeng.1466951331.modular.system.dao.UserMapper;
 import org.junit.Test;
 
 import javax.annotation.Resource;

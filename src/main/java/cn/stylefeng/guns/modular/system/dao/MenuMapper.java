@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.modular.system.dao;
+package cn.stylefeng.1466951331.modular.system.dao;
 
-import cn.stylefeng.guns.core.common.node.MenuNode;
-import cn.stylefeng.guns.core.common.node.ZTreeNode;
-import cn.stylefeng.guns.modular.system.model.Menu;
+import cn.stylefeng.1466951331.core.common.node.MenuNode;
+import cn.stylefeng.1466951331.core.common.node.ZTreeNode;
+import cn.stylefeng.1466951331.modular.system.model.Menu;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Param;
 
@@ -26,7 +26,7 @@ import java.util.Map;
 
 /**
  * <p>
- * 菜单表 Mapper 接口
+ * 菜单�?Mapper 接口
  * </p>
  *
  * @author stylefeng
@@ -38,7 +38,7 @@ public interface MenuMapper extends BaseMapper<Menu> {
      * 根据条件查询菜单
      *
      * @return
-     * @date 2017年2月12日 下午9:14:34
+     * @date 2017�?�?2�?下午9:14:34
      */
     List<Map<String, Object>> selectMenus(@Param("condition") String condition, @Param("level") String level);
 
@@ -46,23 +46,23 @@ public interface MenuMapper extends BaseMapper<Menu> {
      * 根据条件查询菜单
      *
      * @return
-     * @date 2017年2月12日 下午9:14:34
+     * @date 2017�?�?2�?下午9:14:34
      */
     List<Long> getMenuIdsByRoleId(@Param("roleId") Integer roleId);
 
     /**
-     * 获取菜单列表树
+     * 获取菜单列表�?
      *
      * @return
-     * @date 2017年2月19日 下午1:33:51
+     * @date 2017�?�?9�?下午1:33:51
      */
     List<ZTreeNode> menuTreeList();
 
     /**
-     * 获取菜单列表树
+     * 获取菜单列表�?
      *
      * @return
-     * @date 2017年2月19日 下午1:33:51
+     * @date 2017�?�?9�?下午1:33:51
      */
     List<ZTreeNode> menuTreeListByMenuIds(List<Long> menuIds);
 
@@ -71,7 +71,7 @@ public interface MenuMapper extends BaseMapper<Menu> {
      *
      * @param menuId
      * @return
-     * @date 2017年2月19日 下午4:10:59
+     * @date 2017�?�?9�?下午4:10:59
      */
     int deleteRelationByMenu(Long menuId);
 
@@ -80,7 +80,7 @@ public interface MenuMapper extends BaseMapper<Menu> {
      *
      * @param roleId
      * @return
-     * @date 2017年2月19日 下午7:12:38
+     * @date 2017�?�?9�?下午7:12:38
      */
     List<String> getResUrlsByRoleId(Integer roleId);
 
@@ -89,7 +89,7 @@ public interface MenuMapper extends BaseMapper<Menu> {
      *
      * @param roleIds
      * @return
-     * @date 2017年2月19日 下午10:35:40
+     * @date 2017�?�?9�?下午10:35:40
      */
     List<MenuNode> getMenusByRoleIds(List<Integer> roleIds);
 }

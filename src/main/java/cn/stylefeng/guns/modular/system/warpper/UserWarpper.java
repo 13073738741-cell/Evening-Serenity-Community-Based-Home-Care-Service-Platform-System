@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.modular.system.warpper;
+package cn.stylefeng.1466951331.modular.system.warpper;
 
-import cn.stylefeng.guns.core.common.constant.factory.ConstantFactory;
+import cn.stylefeng.1466951331.core.common.constant.factory.ConstantFactory;
 import cn.stylefeng.roses.core.base.warpper.BaseControllerWrapper;
 import cn.stylefeng.roses.kernel.model.page.PageResult;
 import com.baomidou.mybatisplus.plugins.Page;
@@ -27,7 +27,7 @@ import java.util.Map;
  * 用户管理的包装类
  *
  * @author fengshuonan
- * @date 2017年2月13日 下午10:47:03
+ * @date 2017�?�?3�?下午10:47:03
  */
 public class UserWarpper extends BaseControllerWrapper {
 

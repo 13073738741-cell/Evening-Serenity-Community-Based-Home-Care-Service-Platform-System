@@ -13,17 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.common.constant;
+package cn.stylefeng.1466951331.core.common.constant;
 
 /**
- * 多数据源的枚举
+ * 多数据源的枚�?
  *
  * @author fengshuonan
- * @date 2017年3月5日 上午10:15:02
+ * @date 2017�?�?�?上午10:15:02
  */
 public interface DatasourceEnum {
 
-    String DATA_SOURCE_GUNS = "dataSourceGuns";            //guns数据源
+    String DATA_SOURCE_1466951331 = "dataSource1466951331";            //1466951331数据�?
 
     String DATA_SOURCE_BIZ = "dataSourceBiz";            //其他业务的数据源
 }

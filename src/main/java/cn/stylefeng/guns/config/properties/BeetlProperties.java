@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.config.properties;
+package cn.stylefeng.1466951331.config.properties;
 
 import cn.stylefeng.roses.core.util.ToolUtil;
 import org.springframework.beans.factory.annotation.Value;

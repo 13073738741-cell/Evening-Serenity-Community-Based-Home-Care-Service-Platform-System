@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns;
+package cn.stylefeng.1466951331;
 
 import cn.stylefeng.roses.core.config.WebAutoConfiguration;
 import org.slf4j.Logger;
@@ -22,18 +22,18 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * SpringBoot方式启动类
+ * SpringBoot方式启动�?
  *
  * @author stylefeng
  * @Date 2017/5/21 12:06
  */
 @SpringBootApplication(exclude = WebAutoConfiguration.class)
-public class GunsApplication {
+public class 1466951331Application {
 
-    private final static Logger logger = LoggerFactory.getLogger(GunsApplication.class);
+    private final static Logger logger = LoggerFactory.getLogger(1466951331Application.class);
 
     public static void main(String[] args) {
-        SpringApplication.run(GunsApplication.class, args);
-        logger.info("GunsApplication is success!");
+        SpringApplication.run(1466951331Application.class, args);
+        logger.info("1466951331Application is success!");
     }
 }

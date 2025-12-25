@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.util;
+package cn.stylefeng.1466951331.core.util;
 
 import cn.stylefeng.roses.core.util.SpringContextHolder;
 import lombok.extern.slf4j.Slf4j;
@@ -24,7 +24,7 @@ import net.sf.ehcache.Element;
 import java.util.List;
 
 /**
- * 缓存工具类
+ * 缓存工具�?
  */
 @Slf4j
 public class CacheUtil {

@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.config.web;
+package cn.stylefeng.1466951331.config.web;
 
-import cn.stylefeng.guns.config.properties.GunsProperties;
-import cn.stylefeng.guns.core.interceptor.GunsUserFilter;
-import cn.stylefeng.guns.core.shiro.ShiroDbRealm;
+import cn.stylefeng.1466951331.config.properties.1466951331Properties;
+import cn.stylefeng.1466951331.core.interceptor.1466951331UserFilter;
+import cn.stylefeng.1466951331.core.shiro.ShiroDbRealm;
 import org.apache.shiro.cache.CacheManager;
 import org.apache.shiro.cache.ehcache.EhCacheManager;
 import org.apache.shiro.codec.Base64;
@@ -44,16 +44,16 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * shiro权限管理的配置
+ * shiro权限管理的配�?
  *
  * @author fengshuonan
- * @date 2016年11月14日 下午3:03:44
+ * @date 2016�?1�?4�?下午3:03:44
  */
 @Configuration
 public class ShiroConfig {
 
     /**
-     * 安全管理器
+     * 安全管理�?
      */
     @Bean
     public DefaultWebSecurityManager securityManager(CookieRememberMeManager rememberMeManager, CacheManager cacheShiroManager, SessionManager sessionManager) {
@@ -66,24 +66,24 @@ public class ShiroConfig {
     }
 
     /**
-     * spring session管理器（多机环境）
+     * spring session管理器（多机环境�?
      */
     @Bean
-    @ConditionalOnProperty(prefix = "guns", name = "spring-session-open", havingValue = "true")
+    @ConditionalOnProperty(prefix = "1466951331", name = "spring-session-open", havingValue = "true")
     public ServletContainerSessionManager servletContainerSessionManager() {
         return new ServletContainerSessionManager();
     }
 
     /**
-     * session管理器(单机环境)
+     * session管理�?单机环境)
      */
     @Bean
-    @ConditionalOnProperty(prefix = "guns", name = "spring-session-open", havingValue = "false")
-    public DefaultWebSessionManager defaultWebSessionManager(CacheManager cacheShiroManager, GunsProperties gunsProperties) {
+    @ConditionalOnProperty(prefix = "1466951331", name = "spring-session-open", havingValue = "false")
+    public DefaultWebSessionManager defaultWebSessionManager(CacheManager cacheShiroManager, 1466951331Properties 1466951331Properties) {
         DefaultWebSessionManager sessionManager = new DefaultWebSessionManager();
         sessionManager.setCacheManager(cacheShiroManager);
-        sessionManager.setSessionValidationInterval(gunsProperties.getSessionValidationInterval() * 1000);
-        sessionManager.setGlobalSessionTimeout(gunsProperties.getSessionInvalidateTime() * 1000);
+        sessionManager.setSessionValidationInterval(1466951331Properties.getSessionValidationInterval() * 1000);
+        sessionManager.setGlobalSessionTimeout(1466951331Properties.getSessionInvalidateTime() * 1000);
         sessionManager.setDeleteInvalidSessions(true);
         sessionManager.setSessionValidationSchedulerEnabled(true);
         Cookie cookie = new SimpleCookie(ShiroHttpSession.DEFAULT_SESSION_ID_NAME);
@@ -94,7 +94,7 @@ public class ShiroConfig {
     }
 
     /**
-     * 缓存管理器 使用Ehcache实现
+     * 缓存管理�?使用Ehcache实现
      */
     @Bean
     public CacheManager getCacheShiroManager(EhCacheManagerFactoryBean ehcache) {
@@ -112,7 +112,7 @@ public class ShiroConfig {
     }
 
     /**
-     * rememberMe管理器, cipherKey生成见{@code Base64Test.java}
+     * rememberMe管理�? cipherKey生成见{@code Base64Test.java}
      */
     @Bean
     public CookieRememberMeManager rememberMeManager(SimpleCookie rememberMeCookie) {
@@ -129,12 +129,12 @@ public class ShiroConfig {
     public SimpleCookie rememberMeCookie() {
         SimpleCookie simpleCookie = new SimpleCookie("rememberMe");
         simpleCookie.setHttpOnly(true);
-        simpleCookie.setMaxAge(7 * 24 * 60 * 60);//7天
+        simpleCookie.setMaxAge(7 * 24 * 60 * 60);//7�?
         return simpleCookie;
     }
 
     /**
-     * Shiro的过滤器链
+     * Shiro的过滤器�?
      */
     @Bean
     public ShiroFilterFactoryBean shiroFilter(DefaultWebSecurityManager securityManager) {
@@ -154,29 +154,29 @@ public class ShiroConfig {
         shiroFilter.setUnauthorizedUrl("/global/error");
 
         /**
-         * 覆盖默认的user拦截器(默认拦截器解决不了ajax请求 session超时的问题,若有更好的办法请及时反馈作者)
+         * 覆盖默认的user拦截�?默认拦截器解决不了ajax请求 session超时的问�?若有更好的办法请及时反馈作�?
          */
         HashMap<String, Filter> myFilters = new HashMap<>();
-        myFilters.put("user", new GunsUserFilter());
+        myFilters.put("user", new 1466951331UserFilter());
         shiroFilter.setFilters(myFilters);
 
         /**
          * 配置shiro拦截器链
          *
-         * anon  不需要认证
-         * authc 需要认证
+         * anon  不需要认�?
+         * authc 需要认�?
          * user  验证通过或RememberMe登录的都可以
          *
-         * 当应用开启了rememberMe时,用户下次访问时可以是一个user,但不会是authc,因为authc是需要重新认证的
+         * 当应用开启了rememberMe�?用户下次访问时可以是一个user,但不会是authc,因为authc是需要重新认证的
          *
-         * 顺序从上到下,优先级依次降低
+         * 顺序从上到下,优先级依次降�?
          *
          * api开头的接口，走rest api鉴权，不走shiro鉴权
          *
          */
         Map<String, String> hashMap = new LinkedHashMap<>();
         hashMap.put("/static/**", "anon");
-        hashMap.put("/gunsApi/**", "anon");
+        hashMap.put("/1466951331Api/**", "anon");
         hashMap.put("/login", "anon");
         hashMap.put("/global/sessionError", "anon");
         hashMap.put("/kaptcha", "anon");
@@ -197,7 +197,7 @@ public class ShiroConfig {
     }
 
     /**
-     * Shiro生命周期处理器:
+     * Shiro生命周期处理�?
      * 用于在实现了Initializable接口的Shiro bean初始化时调用Initializable接口回调(例如:UserRealm)
      * 在实现了Destroyable接口的Shiro bean销毁时调用 Destroyable接口回调(例如:DefaultSecurityManager)
      */
@@ -207,7 +207,7 @@ public class ShiroConfig {
     }
 
     /**
-     * 启用shrio授权注解拦截方式，AOP式方法级权限检查
+     * 启用shrio授权注解拦截方式，AOP式方法级权限检�?
      */
     @Bean
     public AuthorizationAttributeSourceAdvisor authorizationAttributeSourceAdvisor(DefaultWebSecurityManager securityManager) {

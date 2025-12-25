@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.tag;
+package cn.stylefeng.1466951331.core.tag;
 
-import cn.stylefeng.guns.core.common.exception.BizExceptionEnum;
-import cn.stylefeng.guns.modular.system.model.Dict;
-import cn.stylefeng.guns.modular.system.service.IDictService;
+import cn.stylefeng.1466951331.core.common.exception.BizExceptionEnum;
+import cn.stylefeng.1466951331.modular.system.model.Dict;
+import cn.stylefeng.1466951331.modular.system.service.IDictService;
 import cn.stylefeng.roses.core.util.ToolUtil;
 import cn.stylefeng.roses.kernel.model.exception.ServiceException;
 import org.beetl.core.Tag;
@@ -33,7 +33,7 @@ import java.util.Map;
  * 字典标签渲染
  *
  * @author zhangjiajia
- * @Date 2018年6月4日17:33:32
+ * @Date 2018�?�?�?7:33:32
  */
 @Component
 @Scope("prototype")
@@ -52,9 +52,9 @@ public class DictSelectorTag extends Tag {
 
         //字典类型编码
         String code = attrs.get("code").toString();
-        //控件显示类型select 选择框,radio 单选按钮,checkbox 多选按钮
+        //控件显示类型select 选择�?radio 单选按�?checkbox 多选按�?
         String type = ToolUtil.isNotEmpty(attrs.get("type")) ? attrs.get("type").toString() : "select";
-        //开启多选
+        //开启多�?
         String multiple = ToolUtil.isNotEmpty(attrs.get("multiple")) ? attrs.get("multiple").toString() : "";
         //字典名称
         String label = ToolUtil.isNotEmpty(attrs.get("label")) ? attrs.get("label").toString() : "";
@@ -62,19 +62,19 @@ public class DictSelectorTag extends Tag {
         String placeholder = (ToolUtil.isNotEmpty(attrs.get("placeholder")) ? attrs.get("placeholder").toString() : "");
         //宽度
         String width = ToolUtil.isNotEmpty(attrs.get("width")) ? attrs.get("width").toString() : "248";
-        //默认值
+        //默认�?
         String value = ToolUtil.isNotEmpty(attrs.get("value")) ? attrs.get("value").toString() : "";
         //id
         String id = ToolUtil.isNotEmpty(attrs.get("id")) ? attrs.get("id").toString() : "";
         //name
         String name = ToolUtil.isNotEmpty(attrs.get("name")) ? attrs.get("name").toString() : "";
-        //分割线
+        //分割�?
         String underline = ToolUtil.isNotEmpty(attrs.get("underline")) ? attrs.get("underline").toString() : "";
         //onchange事件
         String onchange = ToolUtil.isNotEmpty(attrs.get("onchange")) ? attrs.get("onchange").toString() : "";
-        //readonly属性
+        //readonly属�?
         String readonly = ToolUtil.isNotEmpty(attrs.get("readonly")) ? attrs.get("readonly").toString() : "";
-        //disabled属性
+        //disabled属�?
         String disabled = ToolUtil.isNotEmpty(attrs.get("disabled")) ? attrs.get("disabled").toString() : "";
         //searchnum 下拉选项数量达到多少启用搜索,默认10
         int searchnum = ToolUtil.isNum(attrs.get("searchnum")) ? Integer.parseInt(attrs.get("searchnum").toString()) : 10;
@@ -86,7 +86,7 @@ public class DictSelectorTag extends Tag {
         html.append("<label class=\"col-sm-3 control-label\">" + label + "</label>\r\n");
         html.append("<div class=\"col-sm-9\">\r\n");
 
-        //单选按钮
+        //单选按�?
         if ("radio".equals(type)) {
 
             list.forEach(obj -> {
@@ -109,7 +109,7 @@ public class DictSelectorTag extends Tag {
                 html.append("value=\"" + obj.getCode() + "\" >" + obj.getName() + "</label>\r\n");
             });
 
-            //多选按钮
+            //多选按�?
         } else if ("checkbox".equals(type)) {
             list.forEach(obj -> {
                 html.append("<label class=\"checkbox-inline i-checks\">\r\n<input type=\"checkbox\" ");
@@ -133,7 +133,7 @@ public class DictSelectorTag extends Tag {
 
             //默认select
         } else {
-            //开启多选
+            //开启多�?
             if ("true".equals(multiple)) {
                 if (list.size() >= searchnum) {
                     html.append("<select multiple ");
@@ -163,8 +163,8 @@ public class DictSelectorTag extends Tag {
                 }
             }
 
-            //判断是否启用搜索框
-            //判断下拉数据,如果查询出来的条数达到启用搜索的数量就启用
+            //判断是否启用搜索�?
+            //判断下拉数据,如果查询出来的条数达到启用搜索的数量就启�?
 
 
             if (list.size() >= searchnum) {
@@ -191,7 +191,7 @@ public class DictSelectorTag extends Tag {
             if (ToolUtil.isNotEmpty(placeholder)) {
                 html.append("<option value=\"\">" + placeholder + "</option>\r\n");
             }
-            //将查询出来的数据添加到select中
+            //将查询出来的数据添加到select�?
             list.forEach(obj -> {
                 if (ToolUtil.isNotEmpty(value) && value.equals(obj.getCode())) {
                     html.append("<option selected value=\"" + obj.getCode() + "\">" + obj.getName() + "</option>\r\n");
@@ -203,7 +203,7 @@ public class DictSelectorTag extends Tag {
         }
 
         html.append("</div>\r\n</div>\r\n");
-        //判断是否添加分割线
+        //判断是否添加分割�?
         if (ToolUtil.isNotEmpty(underline) && "true".equals(underline)) {
             html.append("<div class=\"hr-line-dashed\" ></div >\r\n");
         }

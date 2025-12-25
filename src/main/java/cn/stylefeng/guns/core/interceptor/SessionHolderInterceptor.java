@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.interceptor;
+package cn.stylefeng.1466951331.core.interceptor;
 
 import cn.stylefeng.roses.core.base.controller.BaseController;
 import cn.stylefeng.roses.core.util.HttpSessionContext;
@@ -27,13 +27,13 @@ import org.springframework.stereotype.Component;
  * 静态调用session的拦截器
  *
  * @author fengshuonan
- * @date 2016年11月13日 下午10:15:42
+ * @date 2016�?1�?3�?下午10:15:42
  */
 @Aspect
 @Component
 public class SessionHolderInterceptor extends BaseController {
 
-    @Pointcut("execution(* cn.stylefeng.guns.*..controller.*.*(..))")
+    @Pointcut("execution(* cn.stylefeng.1466951331.*..controller.*.*(..))")
     public void cutService() {
     }
 

@@ -1,4 +1,4 @@
-package cn.stylefeng.guns.modular.system.model;
+package cn.stylefeng.1466951331.modular.system.model;
 
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableId;
@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 /**
  * <p>
- * 角色表
+ * 角色�?
  * </p>
  *
  * @author stylefeng
@@ -46,7 +46,7 @@ public class Role extends Model<Role> {
      */
     private String tips;
     /**
-     * 保留字段(暂时没用）
+     * 保留字段(暂时没用�?
      */
     private Integer version;
 

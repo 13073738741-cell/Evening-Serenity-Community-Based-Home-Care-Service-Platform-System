@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.modular.system.warpper;
+package cn.stylefeng.1466951331.modular.system.warpper;
 
-import cn.stylefeng.guns.core.common.constant.factory.ConstantFactory;
-import cn.stylefeng.guns.core.util.Contrast;
+import cn.stylefeng.1466951331.core.common.constant.factory.ConstantFactory;
+import cn.stylefeng.1466951331.core.util.Contrast;
 import cn.stylefeng.roses.core.base.warpper.BaseControllerWrapper;
 import cn.stylefeng.roses.core.util.ToolUtil;
 import cn.stylefeng.roses.kernel.model.page.PageResult;
@@ -29,7 +29,7 @@ import java.util.Map;
  * 日志列表的包装类
  *
  * @author fengshuonan
- * @date 2017年4月5日22:56:24
+ * @date 2017�?�?�?2:56:24
  */
 public class LogWarpper extends BaseControllerWrapper {
 
@@ -56,13 +56,13 @@ public class LogWarpper extends BaseControllerWrapper {
         Integer userid = (Integer) map.get("userid");
         map.put("userName", ConstantFactory.me().getUserNameById(userid));
 
-        //如果信息过长,则只截取前100位字符串
+        //如果信息过长,则只截取�?00位字符串
         if (ToolUtil.isNotEmpty(message) && message.length() >= 100) {
             String subMessage = message.substring(0, 100) + "...";
             map.put("message", subMessage);
         }
 
-        //如果信息中包含分割符号;;;   则分割字符串返给前台
+        //如果信息中包含分割符�?;;   则分割字符串返给前台
         if (ToolUtil.isNotEmpty(message) && message.indexOf(Contrast.separator) != -1) {
             String[] msgs = message.split(Contrast.separator);
             map.put("regularMessage", msgs);

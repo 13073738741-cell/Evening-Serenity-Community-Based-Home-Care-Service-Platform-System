@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.aop;
+package cn.stylefeng.1466951331.core.aop;
 
-import cn.stylefeng.guns.core.common.annotion.Permission;
-import cn.stylefeng.guns.core.shiro.service.PermissionCheckService;
+import cn.stylefeng.1466951331.core.common.annotion.Permission;
+import cn.stylefeng.1466951331.core.shiro.service.PermissionCheckService;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -43,7 +43,7 @@ public class PermissionAop {
     @Autowired
     private PermissionCheckService check;
 
-    @Pointcut(value = "@annotation(cn.stylefeng.guns.core.common.annotion.Permission)")
+    @Pointcut(value = "@annotation(cn.stylefeng.1466951331.core.common.annotion.Permission)")
     private void cutPermission() {
 
     }
@@ -56,7 +56,7 @@ public class PermissionAop {
         Object[] permissions = permission.value();
         if (permissions.length == 0) {
 
-            //检查全体角色
+            //检查全体角�?
             boolean result = check.checkAll();
             if (result) {
                 return point.proceed();
@@ -66,7 +66,7 @@ public class PermissionAop {
 
         } else {
 
-            //检查指定角色
+            //检查指定角�?
             boolean result = check.check(permissions);
             if (result) {
                 return point.proceed();

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 
-    <!--日志格式应用spring boot默认的格式，也可以自己更改-->
+    <!--日志格式应用spring boot默认的格式，也可以自己更�?->
     <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
 
-    <!--定义日志存放的位置，默认存放在项目启动的相对路径的目录-->
+    <!--定义日志存放的位置，默认存放在项目启动的相对路径的目�?->
     <springProperty scope="context" name="LOG_PATH" source="log.path" defaultValue="app-log"/>
 
     <!-- ****************************************************************************************** -->
@@ -30,7 +30,7 @@
     </springProfile>
 
     <!-- ********************************************************************************************** -->
-    <!-- **** 放到服务器上不管在什么环境都只在文件记录日志，控制台（catalina.out）打印logback捕获不到的日志 **** -->
+    <!-- **** 放到服务器上不管在什么环境都只在文件记录日志，控制台（catalina.out）打印logback捕获不到的日�?**** -->
     <!-- ********************************************************************************************** -->
     <springProfile name="!local">
 
@@ -50,10 +50,10 @@
             <!-- 日志记录器的滚动策略，按日期，按大小记录 -->
             <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 
-                <!-- 归档的日志文件的路径，%d{yyyy-MM-dd}指定日期格式，%i指定索引 -->
+                <!-- 归档的日志文件的路径�?d{yyyy-MM-dd}指定日期格式�?i指定索引 -->
                 <fileNamePattern>${LOG_PATH}/error/log-error-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
 
-                <!-- 除按日志记录之外，还配置了日志文件不能超过2M，若超过2M，日志文件会以索引0开始，
+                <!-- 除按日志记录之外，还配置了日志文件不能超�?M，若超过2M，日志文件会以索�?开始，
                 命名日志文件，例如log-error-2013-12-21.0.log -->
                 <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                     <maxFileSize>10MB</maxFileSize>
@@ -63,13 +63,13 @@
             <!-- 追加方式记录日志 -->
             <append>true</append>
 
-            <!-- 日志文件的格式 -->
+            <!-- 日志文件的格�?-->
             <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
                 <pattern>${FILE_LOG_PATTERN}</pattern>
                 <charset>utf-8</charset>
             </encoder>
 
-            <!-- 此日志文件只记录error级别的 -->
+            <!-- 此日志文件只记录error级别�?-->
             <filter class="ch.qos.logback.classic.filter.LevelFilter">
                 <level>error</level>
                 <onMatch>ACCEPT</onMatch>
@@ -86,10 +86,10 @@
             <!-- 日志记录器的滚动策略，按日期，按大小记录 -->
             <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 
-                <!-- 归档的日志文件的路径，%d{yyyy-MM-dd}指定日期格式，%i指定索引 -->
+                <!-- 归档的日志文件的路径�?d{yyyy-MM-dd}指定日期格式�?i指定索引 -->
                 <fileNamePattern>${LOG_PATH}/total/log-total-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
 
-                <!-- 除按日志记录之外，还配置了日志文件不能超过2M，若超过2M，日志文件会以索引0开始，
+                <!-- 除按日志记录之外，还配置了日志文件不能超�?M，若超过2M，日志文件会以索�?开始，
                 命名日志文件，例如log-error-2013-12-21.0.log -->
                 <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                     <maxFileSize>10MB</maxFileSize>
@@ -99,14 +99,14 @@
             <!-- 追加方式记录日志 -->
             <append>true</append>
 
-            <!-- 日志文件的格式 -->
+            <!-- 日志文件的格�?-->
             <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
                 <pattern>${FILE_LOG_PATTERN}</pattern>
                 <charset>utf-8</charset>
             </encoder>
         </appender>
 
-        <!--记录到文件时，记录两类一类是error日志，一个是所有日志-->
+        <!--记录到文件时，记录两类一类是error日志，一个是所有日�?->
         <root level="info">
             <appender-ref ref="STDOUT"/>
             <appender-ref ref="FILE_ERROR"/>

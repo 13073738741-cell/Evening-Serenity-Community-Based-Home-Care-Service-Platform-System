@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.util;
+package cn.stylefeng.1466951331.core.util;
 
-import cn.stylefeng.guns.core.common.constant.JwtConstants;
+import cn.stylefeng.1466951331.core.common.constant.JwtConstants;
 import cn.stylefeng.roses.core.util.ToolUtil;
 import io.jsonwebtoken.*;
 
@@ -24,14 +24,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * <p>jwt token工具类</p>
+ * <p>jwt token工具�?/p>
  * <pre>
- *     jwt的claim里一般包含以下几种数据:
- *         1. iss -- token的发行者
- *         2. sub -- 该JWT所面向的用户
- *         3. aud -- 接收该JWT的一方
- *         4. exp -- token的失效时间
- *         5. nbf -- 在此时间段之前,不会被处理
+ *     jwt的claim里一般包含以下几种数�?
+ *         1. iss -- token的发行�?
+ *         2. sub -- 该JWT所面向的用�?
+ *         3. aud -- 接收该JWT的一�?
+ *         4. exp -- token的失效时�?
+ *         5. nbf -- 在此时间段之�?不会被处�?
  *         6. iat -- jwt发布时间
  *         7. jti -- jwt唯一标识,防止重复使用
  * </pre>
@@ -42,7 +42,7 @@ import java.util.Map;
 public class JwtTokenUtil {
 
     /**
-     * 获取用户名从token中
+     * 获取用户名从token�?
      */
     public static String getUsernameFromToken(String token) {
         return getClaimFromToken(token).getSubject();
@@ -63,7 +63,7 @@ public class JwtTokenUtil {
     }
 
     /**
-     * 获取jwt接收者
+     * 获取jwt接收�?
      */
     public static String getAudienceFromToken(String token) {
         return getClaimFromToken(token).getAudience();
@@ -87,7 +87,7 @@ public class JwtTokenUtil {
     }
 
     /**
-     * 解析token是否正确,不正确会报异常<br>
+     * 解析token是否正确,不正确会报异�?br>
      */
     public static void parseToken(String token) throws JwtException {
         Jwts.parser().setSigningKey(JwtConstants.SECRET).parseClaimsJws(token).getBody();
@@ -96,7 +96,7 @@ public class JwtTokenUtil {
     /**
      * <pre>
      *  验证token是否失效
-     *  true:过期   false:没过期
+     *  true:过期   false:没过�?
      * </pre>
      */
     public static Boolean isTokenExpired(String token) {
@@ -133,7 +133,7 @@ public class JwtTokenUtil {
     }
 
     /**
-     * 获取混淆MD5签名用的随机字符串
+     * 获取混淆MD5签名用的随机字符�?
      */
     public static String getRandomKey() {
         return ToolUtil.getRandomString(6);

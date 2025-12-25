@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.stylefeng.guns.modular.system.dao.PatientInfoMapper">
+<mapper namespace="cn.stylefeng.1466951331.modular.system.dao.PatientInfoMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.modular.system.model.PatientInfo">
+    <resultMap id="BaseResultMap" type="cn.stylefeng.1466951331.modular.system.model.PatientInfo">
         <id column="paient_idcard" property="paientIdcard" />
         <result column="paient_name" property="paientName" />
         <result column="paient_money" property="paientMoney" />
     </resultMap>
 
-    <!-- 通用查询结果列 -->
+    <!-- 通用查询结果�?-->
     <sql id="Base_Column_List">
         paient_idcard, paient_name, paient_money
     </sql>

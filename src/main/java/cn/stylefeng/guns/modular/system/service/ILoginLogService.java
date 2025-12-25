@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.modular.system.service;
+package cn.stylefeng.1466951331.modular.system.service;
 
-import cn.stylefeng.guns.modular.system.model.LoginLog;
+import cn.stylefeng.1466951331.modular.system.model.LoginLog;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.baomidou.mybatisplus.service.IService;
 
@@ -24,7 +24,7 @@ import java.util.Map;
 
 /**
  * <p>
- * 登录记录 服务类
+ * 登录记录 服务�?
  * </p>
  *
  * @author stylefeng123

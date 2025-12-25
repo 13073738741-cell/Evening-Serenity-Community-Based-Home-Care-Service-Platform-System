@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.modular.system.warpper;
+package cn.stylefeng.1466951331.modular.system.warpper;
 
-import cn.stylefeng.guns.core.common.constant.factory.ConstantFactory;
+import cn.stylefeng.1466951331.core.common.constant.factory.ConstantFactory;
 import cn.stylefeng.roses.core.base.warpper.BaseControllerWrapper;
 import cn.stylefeng.roses.core.util.ToolUtil;
 import cn.stylefeng.roses.kernel.model.page.PageResult;
@@ -25,10 +25,10 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 部门列表的包装
+ * 部门列表的包�?
  *
  * @author fengshuonan
- * @date 2017年4月25日 18:10:31
+ * @date 2017�?�?5�?18:10:31
  */
 public class DeptWarpper extends BaseControllerWrapper {
 

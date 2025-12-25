@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.config.web;
+package cn.stylefeng.1466951331.config.web;
 
-import cn.stylefeng.guns.config.properties.BeetlProperties;
-import cn.stylefeng.guns.core.beetl.BeetlConfiguration;
+import cn.stylefeng.1466951331.config.properties.BeetlProperties;
+import cn.stylefeng.1466951331.core.beetl.BeetlConfiguration;
 import org.beetl.core.resource.ClasspathResourceLoader;
 import org.beetl.ext.spring.BeetlSpringViewResolver;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,10 +24,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * web 配置类
+ * web 配置�?
  *
  * @author fengshuonan
- * @date 2016年11月12日 下午5:03:32
+ * @date 2016�?1�?2�?下午5:03:32
  */
 @Configuration
 public class BeetlConfig {
@@ -36,7 +36,7 @@ public class BeetlConfig {
     BeetlProperties beetlProperties;
 
     /**
-     * beetl的配置
+     * beetl的配�?
      */
     @Bean(initMethod = "init")
     public BeetlConfiguration beetlConfiguration() {

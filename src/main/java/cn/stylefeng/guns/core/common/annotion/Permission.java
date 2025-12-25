@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.common.annotion;
+package cn.stylefeng.1466951331.core.common.annotion;
 
 import java.lang.annotation.*;
 
 /**
- * 权限注解 用于检查权限 规定访问权限
+ * 权限注解 用于检查权�?规定访问权限
  *
  * @example @Permission({role1,role2})
  * @example @Permission

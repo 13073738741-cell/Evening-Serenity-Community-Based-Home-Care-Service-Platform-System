@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.modular.system.controller;
+package cn.stylefeng.1466951331.modular.system.controller;
 
-import cn.stylefeng.guns.config.properties.GunsProperties;
+import cn.stylefeng.1466951331.config.properties.1466951331Properties;
 import cn.stylefeng.roses.core.util.FileUtil;
 import com.google.code.kaptcha.Constants;
 import com.google.code.kaptcha.Producer;
@@ -33,7 +33,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 
 /**
- * 验证码生成
+ * 验证码生�?
  *
  * @author fengshuonan
  * @date 2017-05-05 23:10
@@ -43,13 +43,13 @@ import java.io.IOException;
 public class KaptchaController {
 
     @Autowired
-    private GunsProperties gunsProperties;
+    private 1466951331Properties 1466951331Properties;
 
     @Autowired
     private Producer producer;
 
     /**
-     * 生成验证码
+     * 生成验证�?
      */
     @RequestMapping("")
     public void index(HttpServletRequest request, HttpServletResponse response) {
@@ -113,12 +113,12 @@ public class KaptchaController {
      */
     @RequestMapping("/{pictureId}")
     public void renderPicture(@PathVariable("pictureId") String pictureId, HttpServletResponse response) {
-        String path = gunsProperties.getFileUploadPath() + pictureId;
+        String path = 1466951331Properties.getFileUploadPath() + pictureId;
         try {
             byte[] bytes = FileUtil.toByteArray(path);
             response.getOutputStream().write(bytes);
         } catch (Exception e) {
-            //如果找不到图片就返回一个默认图片
+            //如果找不到图片就返回一个默认图�?
             try {
                 response.sendRedirect("/static/img/girl.gif");
             } catch (IOException e1) {

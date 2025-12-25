@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.config;
+package cn.stylefeng.1466951331.config;
 
 import net.sf.ehcache.CacheManager;
 import org.springframework.cache.annotation.EnableCaching;
@@ -34,7 +34,7 @@ import org.springframework.core.io.ClassPathResource;
 public class EhCacheConfig {
 
     /**
-     * EhCache的配置
+     * EhCache的配�?
      */
     @Bean
     public EhCacheCacheManager cacheManager(CacheManager cacheManager) {
@@ -42,7 +42,7 @@ public class EhCacheConfig {
     }
 
     /**
-     * EhCache的配置
+     * EhCache的配�?
      */
     @Bean
     public EhCacheManagerFactoryBean ehcache() {

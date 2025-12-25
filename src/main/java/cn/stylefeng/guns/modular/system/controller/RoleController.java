@@ -13,23 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.modular.system.controller;
+package cn.stylefeng.1466951331.modular.system.controller;
 
-import cn.stylefeng.guns.core.common.annotion.BussinessLog;
-import cn.stylefeng.guns.core.common.annotion.Permission;
-import cn.stylefeng.guns.core.common.constant.Const;
-import cn.stylefeng.guns.core.common.constant.cache.Cache;
-import cn.stylefeng.guns.core.common.constant.dictmap.RoleDict;
-import cn.stylefeng.guns.core.common.constant.factory.ConstantFactory;
-import cn.stylefeng.guns.core.common.exception.BizExceptionEnum;
-import cn.stylefeng.guns.core.common.node.ZTreeNode;
-import cn.stylefeng.guns.core.log.LogObjectHolder;
-import cn.stylefeng.guns.core.util.CacheUtil;
-import cn.stylefeng.guns.modular.system.model.Role;
-import cn.stylefeng.guns.modular.system.model.User;
-import cn.stylefeng.guns.modular.system.service.IRoleService;
-import cn.stylefeng.guns.modular.system.service.IUserService;
-import cn.stylefeng.guns.modular.system.warpper.RoleWarpper;
+import cn.stylefeng.1466951331.core.common.annotion.BussinessLog;
+import cn.stylefeng.1466951331.core.common.annotion.Permission;
+import cn.stylefeng.1466951331.core.common.constant.Const;
+import cn.stylefeng.1466951331.core.common.constant.cache.Cache;
+import cn.stylefeng.1466951331.core.common.constant.dictmap.RoleDict;
+import cn.stylefeng.1466951331.core.common.constant.factory.ConstantFactory;
+import cn.stylefeng.1466951331.core.common.exception.BizExceptionEnum;
+import cn.stylefeng.1466951331.core.common.node.ZTreeNode;
+import cn.stylefeng.1466951331.core.log.LogObjectHolder;
+import cn.stylefeng.1466951331.core.util.CacheUtil;
+import cn.stylefeng.1466951331.modular.system.model.Role;
+import cn.stylefeng.1466951331.modular.system.model.User;
+import cn.stylefeng.1466951331.modular.system.service.IRoleService;
+import cn.stylefeng.1466951331.modular.system.service.IUserService;
+import cn.stylefeng.1466951331.modular.system.warpper.RoleWarpper;
 import cn.stylefeng.roses.core.base.controller.BaseController;
 import cn.stylefeng.roses.core.reqres.response.ResponseData;
 import cn.stylefeng.roses.core.util.ToolUtil;
@@ -48,10 +48,10 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 角色控制器
+ * 角色控制�?
  *
  * @author fengshuonan
- * @Date 2017年2月12日21:59:14
+ * @Date 2017�?�?2�?1:59:14
  */
 @Controller
 @RequestMapping("/role")
@@ -66,7 +66,7 @@ public class RoleController extends BaseController {
     private IRoleService roleService;
 
     /**
-     * 跳转到角色列表页面
+     * 跳转到角色列表页�?
      */
     @RequestMapping("")
     public String index() {
@@ -74,7 +74,7 @@ public class RoleController extends BaseController {
     }
 
     /**
-     * 跳转到添加角色
+     * 跳转到添加角�?
      */
     @RequestMapping(value = "/role_add")
     public String roleAdd() {
@@ -82,7 +82,7 @@ public class RoleController extends BaseController {
     }
 
     /**
-     * 跳转到修改角色
+     * 跳转到修改角�?
      */
     @Permission
     @RequestMapping(value = "/role_edit/{roleId}")
@@ -99,7 +99,7 @@ public class RoleController extends BaseController {
     }
 
     /**
-     * 跳转到角色分配
+     * 跳转到角色分�?
      */
     @Permission
     @RequestMapping(value = "/role_assign/{roleId}")
@@ -169,7 +169,7 @@ public class RoleController extends BaseController {
             throw new ServiceException(BizExceptionEnum.REQUEST_NULL);
         }
 
-        //不能删除超级管理员角色
+        //不能删除超级管理员角�?
         if (roleId.equals(Const.ADMIN_ROLE_ID)) {
             throw new ServiceException(BizExceptionEnum.CANT_DELETE_ADMIN);
         }

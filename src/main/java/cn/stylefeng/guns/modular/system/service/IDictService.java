@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.modular.system.service;
+package cn.stylefeng.1466951331.modular.system.service;
 
-import cn.stylefeng.guns.modular.system.model.Dict;
+import cn.stylefeng.1466951331.modular.system.model.Dict;
 import com.baomidou.mybatisplus.service.IService;
 
 import java.util.List;

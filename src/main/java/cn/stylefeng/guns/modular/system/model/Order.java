@@ -1,4 +1,4 @@
-package cn.stylefeng.guns.modular.system.model;
+package cn.stylefeng.1466951331.modular.system.model;
 
 import java.util.Date;
 import com.baomidou.mybatisplus.annotations.TableField;

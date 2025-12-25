@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.config.web;
+package cn.stylefeng.1466951331.config.web;
 
-import cn.stylefeng.guns.config.properties.GunsProperties;
-import cn.stylefeng.guns.core.common.controller.GunsErrorView;
-import cn.stylefeng.guns.core.interceptor.RestApiInteceptor;
-import cn.stylefeng.guns.core.listener.ConfigListener;
+import cn.stylefeng.1466951331.config.properties.1466951331Properties;
+import cn.stylefeng.1466951331.core.common.controller.1466951331ErrorView;
+import cn.stylefeng.1466951331.core.interceptor.RestApiInteceptor;
+import cn.stylefeng.1466951331.core.listener.ConfigListener;
 import cn.stylefeng.roses.core.xss.XssFilter;
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;
@@ -45,42 +45,42 @@ import java.util.Arrays;
 import java.util.Properties;
 
 /**
- * web 配置类
+ * web 配置�?
  *
  * @author fengshuonan
- * @date 2016年11月12日 下午5:03:32
+ * @date 2016�?1�?2�?下午5:03:32
  */
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
 
     @Autowired
-    private GunsProperties gunsProperties;
+    private 1466951331Properties 1466951331Properties;
 
     /**
-     * 增加swagger的支持
+     * 增加swagger的支�?
      */
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        if (gunsProperties.getSwaggerOpen()) {
+        if (1466951331Properties.getSwaggerOpen()) {
             registry.addResourceHandler("swagger-ui.html").addResourceLocations("classpath:/META-INF/resources/");
             registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
         }
     }
 
     /**
-     * 增加对rest api鉴权的spring mvc拦截器
+     * 增加对rest api鉴权的spring mvc拦截�?
      */
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new RestApiInteceptor()).addPathPatterns("/gunsApi/**");
+        registry.addInterceptor(new RestApiInteceptor()).addPathPatterns("/1466951331Api/**");
     }
 
     /**
      * 默认错误页面，返回json
      */
     @Bean("error")
-    public GunsErrorView error() {
-        return new GunsErrorView();
+    public 1466951331ErrorView error() {
+        return new 1466951331ErrorView();
     }
 
     /**
@@ -104,7 +104,7 @@ public class WebConfig implements WebMvcConfigurer {
         //添加不需要忽略的格式信息.
         filterRegistrationBean.addInitParameter(
                 "exclusions", "/static/*,*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid,/druid/*");
-        //用于session监控页面的用户名显示 需要登录后主动将username注入到session里
+        //用于session监控页面的用户名显示 需要登录后主动将username注入到session�?
         filterRegistrationBean.addInitParameter("principalSessionName", "username");
         return filterRegistrationBean;
     }
@@ -120,7 +120,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Bean
     public JdkRegexpMethodPointcut druidStatPointcut() {
         JdkRegexpMethodPointcut druidStatPointcut = new JdkRegexpMethodPointcut();
-        String patterns = "cn.stylefeng.guns.modular.*.service.*";
+        String patterns = "cn.stylefeng.1466951331.modular.*.service.*";
         //可以set多个
         druidStatPointcut.setPatterns(patterns);
         return druidStatPointcut;
@@ -176,7 +176,7 @@ public class WebConfig implements WebMvcConfigurer {
     }
 
     /**
-     * 验证码生成相关
+     * 验证码生成相�?
      */
     @Bean
     public DefaultKaptcha kaptcha() {

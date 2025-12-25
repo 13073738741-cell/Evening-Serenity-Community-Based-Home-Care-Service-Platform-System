@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.util;
+package cn.stylefeng.1466951331.core.util;
 
-import cn.stylefeng.guns.config.properties.GunsProperties;
-import cn.stylefeng.guns.core.common.constant.Const;
-import cn.stylefeng.guns.core.common.node.MenuNode;
+import cn.stylefeng.1466951331.config.properties.1466951331Properties;
+import cn.stylefeng.1466951331.core.common.constant.Const;
+import cn.stylefeng.1466951331.core.common.node.MenuNode;
 import cn.stylefeng.roses.core.util.SpringContextHolder;
 
 import java.util.ArrayList;
@@ -33,9 +33,9 @@ public class ApiMenuFilter extends MenuNode {
 
     public static List<MenuNode> build(List<MenuNode> nodes) {
 
-        //如果关闭了接口文档,则不显示接口文档菜单
-        GunsProperties gunsProperties = SpringContextHolder.getBean(GunsProperties.class);
-        if (!gunsProperties.getSwaggerOpen()) {
+        //如果关闭了接口文�?则不显示接口文档菜单
+        1466951331Properties 1466951331Properties = SpringContextHolder.getBean(1466951331Properties.class);
+        if (!1466951331Properties.getSwaggerOpen()) {
             List<MenuNode> menuNodesCopy = new ArrayList<>();
             for (MenuNode menuNode : nodes) {
                 if (Const.API_MENU_NAME.equals(menuNode.getName())) {

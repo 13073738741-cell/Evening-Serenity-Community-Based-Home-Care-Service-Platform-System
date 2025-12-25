@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.config.properties;
+package cn.stylefeng.1466951331.config.properties;
 
 import cn.stylefeng.roses.core.util.ToolUtil;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -24,16 +24,16 @@ import java.io.File;
 import static cn.stylefeng.roses.core.util.ToolUtil.getTempPath;
 
 /**
- * guns项目配置
+ * 1466951331项目配置
  *
  * @author stylefeng
  * @Date 2017/5/23 22:31
  */
 @Component
-@ConfigurationProperties(prefix = GunsProperties.PREFIX)
-public class GunsProperties {
+@ConfigurationProperties(prefix = 1466951331Properties.PREFIX)
+public class 1466951331Properties {
 
-    public static final String PREFIX = "guns";
+    public static final String PREFIX = "1466951331";
 
     private Boolean kaptchaOpen = false;
 
@@ -46,21 +46,21 @@ public class GunsProperties {
     private Boolean springSessionOpen = false;
 
     /**
-     * session 失效时间（默认为30分钟 单位：秒）
+     * session 失效时间（默认为30分钟 单位：秒�?
      */
     private Integer sessionInvalidateTime = 30 * 60;
 
     /**
-     * session 验证失效时间（默认为15分钟 单位：秒）
+     * session 验证失效时间（默认为15分钟 单位：秒�?
      */
     private Integer sessionValidationInterval = 15 * 60;
 
     public String getFileUploadPath() {
-        //如果没有写文件上传路径,保存到临时目录
+        //如果没有写文件上传路�?保存到临时目�?
         if (ToolUtil.isEmpty(fileUploadPath)) {
             return getTempPath();
         } else {
-            //判断有没有结尾符,没有得加上
+            //判断有没有结尾符,没有得加�?
             if (!fileUploadPath.endsWith(File.separator)) {
                 fileUploadPath = fileUploadPath + File.separator;
             }

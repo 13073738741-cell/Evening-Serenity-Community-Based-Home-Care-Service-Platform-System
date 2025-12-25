@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.listener;
+package cn.stylefeng.1466951331.core.listener;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
@@ -22,7 +22,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * ServletContext监听器
+ * ServletContext监听�?
  *
  * @author stylefeng
  * @Date 2018/2/22 21:07
@@ -44,7 +44,7 @@ public class ConfigListener implements ServletContextListener {
     public void contextInitialized(ServletContextEvent evt) {
         ServletContext sc = evt.getServletContext();
 
-        //项目发布,当前运行环境的绝对路径
+        //项目发布,当前运行环境的绝对路�?
         conf.put("realPath", sc.getRealPath("/").replaceFirst("/", ""));
 
         //servletContextPath,默认""

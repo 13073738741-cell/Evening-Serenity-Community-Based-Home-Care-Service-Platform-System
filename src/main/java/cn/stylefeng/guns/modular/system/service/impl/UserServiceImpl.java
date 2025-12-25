@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.modular.system.service.impl;
+package cn.stylefeng.1466951331.modular.system.service.impl;
 
-import cn.stylefeng.guns.modular.system.dao.UserMapper;
-import cn.stylefeng.guns.modular.system.model.User;
-import cn.stylefeng.guns.modular.system.service.IUserService;
+import cn.stylefeng.1466951331.modular.system.dao.UserMapper;
+import cn.stylefeng.1466951331.modular.system.model.User;
+import cn.stylefeng.1466951331.modular.system.service.IUserService;
 import cn.stylefeng.roses.core.datascope.DataScope;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
@@ -27,7 +27,7 @@ import java.util.Map;
 
 /**
  * <p>
- * 管理员表 服务实现类
+ * 管理员表 服务实现�?
  * </p>
  *
  * @author stylefeng123

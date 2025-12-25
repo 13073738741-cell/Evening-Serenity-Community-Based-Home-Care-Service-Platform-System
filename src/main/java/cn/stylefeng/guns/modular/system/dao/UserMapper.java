@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.modular.system.dao;
+package cn.stylefeng.1466951331.modular.system.dao;
 
-import cn.stylefeng.guns.modular.system.model.User;
+import cn.stylefeng.1466951331.modular.system.model.User;
 import cn.stylefeng.roses.core.datascope.DataScope;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Param;
@@ -34,7 +34,7 @@ import java.util.Map;
 public interface UserMapper extends BaseMapper<User> {
 
     /**
-     * 修改用户状态
+     * 修改用户状�?
      */
     int setStatus(@Param("userId") Integer userId, @Param("status") int status);
 
@@ -49,7 +49,7 @@ public interface UserMapper extends BaseMapper<User> {
     List<Map<String, Object>> selectUsers(@Param("dataScope") DataScope dataScope, @Param("name") String name, @Param("beginTime") String beginTime, @Param("endTime") String endTime, @Param("deptid") Integer deptid);
 
     /**
-     * 设置用户的角色
+     * 设置用户的角�?
      */
     int setRoles(@Param("userId") Integer userId, @Param("roleIds") String roleIds);
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.stylefeng.guns.modular.system.dao.DictMapper">
+<mapper namespace="cn.stylefeng.1466951331.modular.system.dao.DictMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.modular.system.model.Dict">
+    <resultMap id="BaseResultMap" type="cn.stylefeng.1466951331.modular.system.model.Dict">
         <id column="id" property="id"/>
         <result column="num" property="num"/>
         <result column="pid" property="pid"/>
@@ -16,14 +16,14 @@
 		id, num, pid, name,code,tips
 	</sql>
 
-    <select id="selectByCode" resultType="cn.stylefeng.guns.modular.system.model.Dict">
+    <select id="selectByCode" resultType="cn.stylefeng.1466951331.modular.system.model.Dict">
         select
         <include refid="Base_Column_List"/>
         from sys_dict
         where code = #{code}
     </select>
 
-    <select id="selectByParentCode" resultType="cn.stylefeng.guns.modular.system.model.Dict">
+    <select id="selectByParentCode" resultType="cn.stylefeng.1466951331.modular.system.model.Dict">
         select
         <include refid="Base_Column_List"/>
         from sys_dict

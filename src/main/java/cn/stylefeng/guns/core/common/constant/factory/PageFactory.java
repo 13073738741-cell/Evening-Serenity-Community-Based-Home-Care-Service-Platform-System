@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.common.constant.factory;
+package cn.stylefeng.1466951331.core.common.constant.factory;
 
-import cn.stylefeng.guns.core.common.constant.state.Order;
+import cn.stylefeng.1466951331.core.common.constant.state.Order;
 import cn.stylefeng.roses.core.util.HttpContext;
 import cn.stylefeng.roses.core.util.ToolUtil;
 import com.baomidou.mybatisplus.plugins.Page;
@@ -23,7 +23,7 @@ import com.baomidou.mybatisplus.plugins.Page;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * BootStrap Table默认的分页参数创建
+ * BootStrap Table默认的分页参数创�?
  *
  * @author fengshuonan
  * @date 2017-04-05 22:25
@@ -32,10 +32,10 @@ public class PageFactory<T> {
 
     public Page<T> defaultPage() {
         HttpServletRequest request = HttpContext.getRequest();
-        int limit = Integer.valueOf(request.getParameter("limit"));     //每页多少条数据
+        int limit = Integer.valueOf(request.getParameter("limit"));     //每页多少条数�?
         int offset = Integer.valueOf(request.getParameter("offset"));   //每页的偏移量(本页当前有多少条)
         String sort = request.getParameter("sort");         //排序字段名称
-        String order = request.getParameter("order");       //asc或desc(升序或降序)
+        String order = request.getParameter("order");       //asc或desc(升序或降�?
         if (ToolUtil.isEmpty(sort)) {
             Page<T> page = new Page<>((offset / limit + 1), limit);
             page.setOpenSort(false);

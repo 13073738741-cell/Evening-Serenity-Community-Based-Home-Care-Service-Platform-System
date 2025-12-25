@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.common.constant.factory;
+package cn.stylefeng.1466951331.core.common.constant.factory;
 
 import cn.hutool.core.util.StrUtil;
 import cn.stylefeng.roses.core.util.ToolUtil;
@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 组合字符串生产者
+ * 组合字符串生产�?
  *
  * @author fengshuonan
  * @date 2017-04-27 16:42
@@ -37,7 +37,7 @@ public class MutiStrFactory {
     public static final String ITEM_SPLIT = ";";
 
     /**
-     * 属性之间的分隔符
+     * 属性之间的分隔�?
      */
     public static final String ATTR_SPLIT = ":";
 

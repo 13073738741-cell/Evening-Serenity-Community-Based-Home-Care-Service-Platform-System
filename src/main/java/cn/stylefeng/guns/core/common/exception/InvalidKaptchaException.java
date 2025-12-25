@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.common.exception;
+package cn.stylefeng.1466951331.core.common.exception;
 
 /**
- * 验证码错误异常
+ * 验证码错误异�?
  *
  * @author fengshuonan
  * @date 2017-05-05 23:52

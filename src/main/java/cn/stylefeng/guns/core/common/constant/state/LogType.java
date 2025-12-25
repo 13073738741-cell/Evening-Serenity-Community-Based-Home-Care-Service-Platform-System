@@ -13,19 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.common.constant.state;
+package cn.stylefeng.1466951331.core.common.constant.state;
 
 /**
  * 日志类型
  *
  * @author fengshuonan
- * @Date 2017年1月22日 下午12:14:59
+ * @Date 2017�?�?2�?下午12:14:59
  */
 public enum LogType {
 
     LOGIN("登录日志"),
     LOGIN_FAIL("登录失败日志"),
-    EXIT("退出日志"),
+    EXIT("退出日�?),
     EXCEPTION("异常日志"),
     BUSSINESS("业务日志");
 

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.shiro.service;
+package cn.stylefeng.1466951331.core.shiro.service;
 
 /**
  * 检查用接口
@@ -21,12 +21,12 @@ package cn.stylefeng.guns.core.shiro.service;
 public interface PermissionCheckService {
 
     /**
-     * 检查当前登录用户是否拥有指定的角色访问当
+     * 检查当前登录用户是否拥有指定的角色访问�?
      */
     boolean check(Object[] permissions);
 
     /**
-     * 检查当前登录用户是否拥有当前请求的servlet的权限
+     * 检查当前登录用户是否拥有当前请求的servlet的权�?
      */
     boolean checkAll();
 }

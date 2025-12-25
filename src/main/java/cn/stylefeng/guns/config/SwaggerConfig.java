@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.config;
+package cn.stylefeng.1466951331.config;
 
 import io.swagger.annotations.ApiOperation;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -28,14 +28,14 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
- * swagger配置类
+ * swagger配置�?
  *
  * @author fengshuonan
- * @date 2017年6月1日19:42:59
+ * @date 2017�?�?�?9:42:59
  */
 @Configuration
 @EnableSwagger2
-@ConditionalOnProperty(prefix = "guns", name = "swagger-open", havingValue = "true")
+@ConditionalOnProperty(prefix = "1466951331", name = "swagger-open", havingValue = "true")
 public class SwaggerConfig {
 
     @Bean
@@ -44,16 +44,16 @@ public class SwaggerConfig {
                 .apiInfo(apiInfo())
                 .select()
                 .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))                         //这里采用包含注解的方式来确定要显示的接口
-                //.apis(RequestHandlerSelectors.basePackage("cn.stylefeng.guns.modular.system.controller"))    //这里采用包扫描的方式来确定要显示的接口
+                //.apis(RequestHandlerSelectors.basePackage("cn.stylefeng.1466951331.modular.system.controller"))    //这里采用包扫描的方式来确定要显示的接�?
                 .paths(PathSelectors.any())
                 .build();
     }
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Guns Doc")
-                .description("Guns Api文档")
-                .termsOfServiceUrl("https://gitee.com/stylefeng/guns")
+                .title("1466951331 Doc")
+                .description("1466951331 Api文档")
+                .termsOfServiceUrl("https://gitee.com/stylefeng/1466951331")
                 .contact("stylefeng")
                 .version("2.0")
                 .build();

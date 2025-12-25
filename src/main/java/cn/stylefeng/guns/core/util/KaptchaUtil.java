@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.core.util;
+package cn.stylefeng.1466951331.core.util;
 
-import cn.stylefeng.guns.config.properties.GunsProperties;
+import cn.stylefeng.1466951331.config.properties.1466951331Properties;
 import cn.stylefeng.roses.core.util.SpringContextHolder;
 
 /**
@@ -24,9 +24,9 @@ import cn.stylefeng.roses.core.util.SpringContextHolder;
 public class KaptchaUtil {
 
     /**
-     * 获取验证码开关
+     * 获取验证码开�?
      */
     public static Boolean getKaptchaOnOff() {
-        return SpringContextHolder.getBean(GunsProperties.class).getKaptchaOpen();
+        return SpringContextHolder.getBean(1466951331Properties.class).getKaptchaOpen();
     }
 }

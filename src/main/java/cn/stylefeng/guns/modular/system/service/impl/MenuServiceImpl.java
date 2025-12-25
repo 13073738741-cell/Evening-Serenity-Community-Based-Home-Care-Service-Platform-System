@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.modular.system.service.impl;
+package cn.stylefeng.1466951331.modular.system.service.impl;
 
-import cn.stylefeng.guns.core.common.node.MenuNode;
-import cn.stylefeng.guns.core.common.node.ZTreeNode;
-import cn.stylefeng.guns.modular.system.dao.MenuMapper;
-import cn.stylefeng.guns.modular.system.model.Menu;
-import cn.stylefeng.guns.modular.system.service.IMenuService;
+import cn.stylefeng.1466951331.core.common.node.MenuNode;
+import cn.stylefeng.1466951331.core.common.node.ZTreeNode;
+import cn.stylefeng.1466951331.modular.system.dao.MenuMapper;
+import cn.stylefeng.1466951331.modular.system.model.Menu;
+import cn.stylefeng.1466951331.modular.system.service.IMenuService;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;

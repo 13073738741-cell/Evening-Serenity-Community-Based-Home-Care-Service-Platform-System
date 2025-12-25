@@ -1,4 +1,4 @@
-package cn.stylefeng.guns.modular.system.model;
+package cn.stylefeng.1466951331.modular.system.model;
 
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableId;
@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 /**
  * <p>
- * 部门表
+ * 部门�?
  * </p>
  *
  * @author stylefeng
@@ -38,7 +38,7 @@ public class Dept extends Model<Dept> {
      */
     private String pids;
     /**
-     * 简称
+     * 简�?
      */
     private String simplename;
     /**
@@ -50,7 +50,7 @@ public class Dept extends Model<Dept> {
      */
     private String tips;
     /**
-     * 版本（乐观锁保留字段）
+     * 版本（乐观锁保留字段�?
      */
     private Integer version;
 

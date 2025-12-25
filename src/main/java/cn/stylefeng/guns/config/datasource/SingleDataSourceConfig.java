@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.config.datasource;
+package cn.stylefeng.1466951331.config.datasource;
 
 import cn.stylefeng.roses.core.config.properties.DruidProperties;
 import cn.stylefeng.roses.core.datascope.DataScopeInterceptor;
@@ -34,9 +34,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * @Date 2017/5/20 21:58
  */
 @Configuration
-@ConditionalOnProperty(prefix = "guns.muti-datasource", name = "open", havingValue = "false", matchIfMissing = true)
+@ConditionalOnProperty(prefix = "1466951331.muti-datasource", name = "open", havingValue = "false", matchIfMissing = true)
 @EnableTransactionManagement
-@MapperScan(basePackages = {"cn.stylefeng.guns.modular.*.dao"})
+@MapperScan(basePackages = {"cn.stylefeng.1466951331.modular.*.dao"})
 public class SingleDataSourceConfig {
 
     /**
@@ -49,7 +49,7 @@ public class SingleDataSourceConfig {
     }
 
     /**
-     * 单数据源连接池配置
+     * 单数据源连接池配�?
      */
     @Bean
     public DruidDataSource dataSource(DruidProperties druidProperties) {

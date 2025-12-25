@@ -13,18 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.modular.system.controller;
+package cn.stylefeng.1466951331.modular.system.controller;
 
-import cn.stylefeng.guns.core.common.annotion.BussinessLog;
-import cn.stylefeng.guns.core.common.annotion.Permission;
-import cn.stylefeng.guns.core.common.constant.Const;
-import cn.stylefeng.guns.core.common.constant.dictmap.DictMap;
-import cn.stylefeng.guns.core.common.constant.factory.ConstantFactory;
-import cn.stylefeng.guns.core.common.exception.BizExceptionEnum;
-import cn.stylefeng.guns.core.log.LogObjectHolder;
-import cn.stylefeng.guns.modular.system.model.Dict;
-import cn.stylefeng.guns.modular.system.service.IDictService;
-import cn.stylefeng.guns.modular.system.warpper.DictWarpper;
+import cn.stylefeng.1466951331.core.common.annotion.BussinessLog;
+import cn.stylefeng.1466951331.core.common.annotion.Permission;
+import cn.stylefeng.1466951331.core.common.constant.Const;
+import cn.stylefeng.1466951331.core.common.constant.dictmap.DictMap;
+import cn.stylefeng.1466951331.core.common.constant.factory.ConstantFactory;
+import cn.stylefeng.1466951331.core.common.exception.BizExceptionEnum;
+import cn.stylefeng.1466951331.core.log.LogObjectHolder;
+import cn.stylefeng.1466951331.modular.system.model.Dict;
+import cn.stylefeng.1466951331.modular.system.service.IDictService;
+import cn.stylefeng.1466951331.modular.system.warpper.DictWarpper;
 import cn.stylefeng.roses.core.base.controller.BaseController;
 import cn.stylefeng.roses.core.util.ToolUtil;
 import cn.stylefeng.roses.kernel.model.exception.ServiceException;
@@ -41,10 +41,10 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 字典控制器
+ * 字典控制�?
  *
  * @author fengshuonan
- * @Date 2017年4月26日 12:55:31
+ * @Date 2017�?�?6�?12:55:31
  */
 @Controller
 @RequestMapping("/dict")
@@ -56,7 +56,7 @@ public class DictController extends BaseController {
     private IDictService dictService;
 
     /**
-     * 跳转到字典管理首页
+     * 跳转到字典管理首�?
      */
     @RequestMapping("")
     public String index() {
@@ -64,7 +64,7 @@ public class DictController extends BaseController {
     }
 
     /**
-     * 跳转到添加字典
+     * 跳转到添加字�?
      */
     @RequestMapping("/dict_add")
     public String deptAdd() {
@@ -72,7 +72,7 @@ public class DictController extends BaseController {
     }
 
     /**
-     * 跳转到修改字典
+     * 跳转到修改字�?
      */
     @Permission(Const.ADMIN_NAME)
     @RequestMapping("/dict_edit/{dictId}")
@@ -103,7 +103,7 @@ public class DictController extends BaseController {
     }
 
     /**
-     * 获取所有字典列表
+     * 获取所有字典列�?
      */
     @RequestMapping(value = "/list")
     @Permission(Const.ADMIN_NAME)
