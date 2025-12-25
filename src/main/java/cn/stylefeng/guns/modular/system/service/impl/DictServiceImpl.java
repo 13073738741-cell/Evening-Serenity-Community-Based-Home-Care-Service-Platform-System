@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.modular.system.service.impl;
+package cn.stylefeng.guns.modular.system.service.impl;
 
-import cn.stylefeng.1466951331.core.common.exception.BizExceptionEnum;
-import cn.stylefeng.1466951331.modular.system.dao.DictMapper;
-import cn.stylefeng.1466951331.modular.system.model.Dict;
-import cn.stylefeng.1466951331.modular.system.service.IDictService;
+import cn.stylefeng.guns.core.common.exception.BizExceptionEnum;
+import cn.stylefeng.guns.modular.system.dao.DictMapper;
+import cn.stylefeng.guns.modular.system.model.Dict;
+import cn.stylefeng.guns.modular.system.service.IDictService;
 import cn.stylefeng.roses.kernel.model.exception.ServiceException;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.mapper.Wrapper;
@@ -30,7 +30,7 @@ import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 
-import static cn.stylefeng.1466951331.core.common.constant.factory.MutiStrFactory.*;
+import static cn.stylefeng.guns.core.common.constant.factory.MutiStrFactory.*;
 
 /**
  * 字典服务
@@ -87,7 +87,7 @@ public class DictServiceImpl extends ServiceImpl<DictMapper, Dict> implements ID
     @Override
     @Transactional
     public void editDict(Integer dictId, String dictCode, String dictName, String dictTips, String dicts) {
-        //删除之前的字�?
+        //删除之前的字�?
         this.delteDict(dictId);
 
         //重新添加新的字典

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.core.shiro.service.impl;
+package cn.stylefeng.guns.core.shiro.service.impl;
 
 import cn.hutool.core.collection.CollectionUtil;
-import cn.stylefeng.1466951331.core.listener.ConfigListener;
-import cn.stylefeng.1466951331.core.shiro.ShiroKit;
-import cn.stylefeng.1466951331.core.shiro.ShiroUser;
-import cn.stylefeng.1466951331.core.shiro.service.PermissionCheckService;
+import cn.stylefeng.guns.core.listener.ConfigListener;
+import cn.stylefeng.guns.core.shiro.ShiroKit;
+import cn.stylefeng.guns.core.shiro.ShiroUser;
+import cn.stylefeng.guns.core.shiro.service.PermissionCheckService;
 import cn.stylefeng.roses.core.util.HttpContext;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -28,7 +28,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 
 /**
- * 权限自定义检�?
+ * 权限自定义检�?
  */
 @Service
 @Transactional(readOnly = true)

@@ -1,8 +1,8 @@
-package cn.stylefeng.1466951331.system;
+﻿package cn.stylefeng.guns.system;
 
-import cn.stylefeng.1466951331.base.BaseJunit;
-import cn.stylefeng.1466951331.modular.system.dao.DictMapper;
-import cn.stylefeng.1466951331.modular.system.service.IDictService;
+import cn.stylefeng.guns.base.BaseJunit;
+import cn.stylefeng.guns.modular.system.dao.DictMapper;
+import cn.stylefeng.guns.modular.system.service.IDictService;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -28,7 +28,7 @@ public class DictTest extends BaseJunit {
     public void addTest() {
         String dictCode = "test";
         String dictName = "字典测试";
-        String dictTips = "这是一个字典测�?;
+        String dictTips = "这是一个字典测�?;
         String dictValues = "1:测试1:1;2:测试2:2";
         dictService.addDict(dictCode, dictName, dictTips, dictValues);
     }

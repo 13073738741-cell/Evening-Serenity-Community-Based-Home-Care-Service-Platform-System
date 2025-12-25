@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.core.common.node;
+package cn.stylefeng.guns.core.common.node;
 
 /**
- * jquery ztree 插件的节�?
+ * jquery ztree 插件的节�?
  *
  * @author fengshuonan
- * @date 2017�?�?7�?下午8:25:14
+ * @date 2017�?�?7�?下午8:25:14
  */
 public class ZTreeNode {
 

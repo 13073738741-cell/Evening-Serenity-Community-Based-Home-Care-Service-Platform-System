@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,21 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.core.common.page;
+package cn.stylefeng.guns.core.common.page;
 
 import com.baomidou.mybatisplus.plugins.Page;
 
 import java.util.List;
 
 /**
- * 分页结果的封�?for Bootstrap Table)
+ * 分页结果的封�?for Bootstrap Table)
  *
  * @author fengshuonan
- * @Date 2017�?�?2�?下午11:06:41
+ * @Date 2017�?�?2�?下午11:06:41
  */
 public class PageInfoBT<T> {
 
-    // 结果�?
+    // 结果�?
     private List<T> rows;
 
     // 总数

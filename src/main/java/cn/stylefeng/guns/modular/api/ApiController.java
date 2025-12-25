@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.modular.api;
+package cn.stylefeng.guns.modular.api;
 
-import cn.stylefeng.1466951331.core.shiro.ShiroKit;
-import cn.stylefeng.1466951331.core.shiro.ShiroUser;
-import cn.stylefeng.1466951331.core.util.JwtTokenUtil;
-import cn.stylefeng.1466951331.modular.system.dao.UserMapper;
-import cn.stylefeng.1466951331.modular.system.model.User;
+import cn.stylefeng.guns.core.shiro.ShiroKit;
+import cn.stylefeng.guns.core.shiro.ShiroUser;
+import cn.stylefeng.guns.core.util.JwtTokenUtil;
+import cn.stylefeng.guns.modular.system.dao.UserMapper;
+import cn.stylefeng.guns.modular.system.model.User;
 import cn.stylefeng.roses.core.base.controller.BaseController;
 import cn.stylefeng.roses.core.reqres.response.ErrorResponseData;
 import org.apache.shiro.authc.SimpleAuthenticationInfo;
@@ -36,13 +36,13 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.HashMap;
 
 /**
- * 接口控制器提�?
+ * 接口控制器提�?
  *
  * @author stylefeng
  * @Date 2018/7/20 23:39
  */
 @RestController
-@RequestMapping("/1466951331Api")
+@RequestMapping("/gunsApi")
 public class ApiController extends BaseController {
 
     @Autowired
@@ -79,12 +79,12 @@ public class ApiController extends BaseController {
             result.put("token", JwtTokenUtil.generateToken(String.valueOf(user.getId())));
             return result;
         } else {
-            return new ErrorResponseData(500, "账号密码错误�?);
+            return new ErrorResponseData(500, "账号密码错误�?);
         }
     }
 
     /**
-     * 测试接口是否走鉴�?
+     * 测试接口是否走鉴�?
      */
     @RequestMapping(value = "/test", method = RequestMethod.POST)
     public Object test() {

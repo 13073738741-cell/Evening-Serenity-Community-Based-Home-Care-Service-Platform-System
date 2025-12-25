@@ -1,11 +1,11 @@
-package cn.stylefeng.1466951331.modular.pateint_health_manager.service;
+﻿package cn.stylefeng.guns.modular.pateint_health_manager.service;
 
-import cn.stylefeng.1466951331.modular.system.model.PatientHealth;
+import cn.stylefeng.guns.modular.system.model.PatientHealth;
 import com.baomidou.mybatisplus.service.IService;
 
 /**
  * <p>
- *  服务�?
+ *  服务�?
  * </p>
  *
  * @author zxx

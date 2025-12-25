@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.core.aop;
+package cn.stylefeng.guns.core.aop;
 
-import cn.stylefeng.1466951331.core.common.exception.BizExceptionEnum;
-import cn.stylefeng.1466951331.core.common.exception.InvalidKaptchaException;
-import cn.stylefeng.1466951331.core.log.LogManager;
-import cn.stylefeng.1466951331.core.log.factory.LogTaskFactory;
-import cn.stylefeng.1466951331.core.shiro.ShiroKit;
+import cn.stylefeng.guns.core.common.exception.BizExceptionEnum;
+import cn.stylefeng.guns.core.common.exception.InvalidKaptchaException;
+import cn.stylefeng.guns.core.log.LogManager;
+import cn.stylefeng.guns.core.log.factory.LogTaskFactory;
+import cn.stylefeng.guns.core.shiro.ShiroKit;
 import cn.stylefeng.roses.core.reqres.response.ErrorResponseData;
 import cn.stylefeng.roses.kernel.model.exception.ServiceException;
 import org.apache.shiro.authc.AuthenticationException;
@@ -41,10 +41,10 @@ import static cn.stylefeng.roses.core.util.HttpContext.getIp;
 import static cn.stylefeng.roses.core.util.HttpContext.getRequest;
 
 /**
- * 全局的的异常拦截器（拦截所有的控制器）（带有@RequestMapping注解的方法上都会拦截�?
+ * 全局的的异常拦截器（拦截所有的控制器）（带有@RequestMapping注解的方法上都会拦截�?
  *
  * @author fengshuonan
- * @date 2016�?1�?2�?下午3:19:56
+ * @date 2016�?1�?2�?下午3:19:56
  */
 @ControllerAdvice
 @Order(-1)
@@ -66,7 +66,7 @@ public class GlobalExceptionHandler {
     }
 
     /**
-     * 用户未登录异�?
+     * 用户未登录异�?
      */
     @ExceptionHandler(AuthenticationException.class)
     @ResponseStatus(HttpStatus.UNAUTHORIZED)
@@ -76,14 +76,14 @@ public class GlobalExceptionHandler {
     }
 
     /**
-     * 账号被冻结异�?
+     * 账号被冻结异�?
      */
     @ExceptionHandler(DisabledAccountException.class)
     @ResponseStatus(HttpStatus.UNAUTHORIZED)
     public String accountLocked(DisabledAccountException e, Model model) {
         String username = getRequest().getParameter("username");
-        LogManager.me().executeLog(LogTaskFactory.loginLog(username, "账号被冻�?, getIp()));
-        model.addAttribute("tips", "账号被冻�?);
+        LogManager.me().executeLog(LogTaskFactory.loginLog(username, "账号被冻�?, getIp()));
+        model.addAttribute("tips", "账号被冻�?);
         return "/login.html";
     }
 
@@ -100,19 +100,19 @@ public class GlobalExceptionHandler {
     }
 
     /**
-     * 验证码错误异�?
+     * 验证码错误异�?
      */
     @ExceptionHandler(InvalidKaptchaException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public String credentials(InvalidKaptchaException e, Model model) {
         String username = getRequest().getParameter("username");
-        LogManager.me().executeLog(LogTaskFactory.loginLog(username, "验证码错�?, getIp()));
-        model.addAttribute("tips", "验证码错�?);
+        LogManager.me().executeLog(LogTaskFactory.loginLog(username, "验证码错�?, getIp()));
+        model.addAttribute("tips", "验证码错�?);
         return "/login.html";
     }
 
     /**
-     * 无权访问该资源异�?
+     * 无权访问该资源异�?
      */
     @ExceptionHandler(UndeclaredThrowableException.class)
     @ResponseStatus(HttpStatus.UNAUTHORIZED)
@@ -132,7 +132,7 @@ public class GlobalExceptionHandler {
     public ErrorResponseData notFount(RuntimeException e) {
         LogManager.me().executeLog(LogTaskFactory.exceptionLog(ShiroKit.getUser().getId(), e));
         getRequest().setAttribute("tip", "服务器未知运行时异常");
-        log.error("运行时异�?", e);
+        log.error("运行时异�?", e);
         return new ErrorResponseData(BizExceptionEnum.SERVER_ERROR.getCode(), BizExceptionEnum.SERVER_ERROR.getMessage());
     }
 }

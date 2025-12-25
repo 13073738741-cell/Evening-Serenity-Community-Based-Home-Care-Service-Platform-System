@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,16 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.core.shiro.service.impl;
+package cn.stylefeng.guns.core.shiro.service.impl;
 
 import cn.hutool.core.convert.Convert;
-import cn.stylefeng.1466951331.core.common.constant.factory.ConstantFactory;
-import cn.stylefeng.1466951331.core.common.constant.state.ManagerStatus;
-import cn.stylefeng.1466951331.core.shiro.ShiroUser;
-import cn.stylefeng.1466951331.core.shiro.service.UserAuthService;
-import cn.stylefeng.1466951331.modular.system.dao.MenuMapper;
-import cn.stylefeng.1466951331.modular.system.dao.UserMapper;
-import cn.stylefeng.1466951331.modular.system.model.User;
+import cn.stylefeng.guns.core.common.constant.factory.ConstantFactory;
+import cn.stylefeng.guns.core.common.constant.state.ManagerStatus;
+import cn.stylefeng.guns.core.shiro.ShiroUser;
+import cn.stylefeng.guns.core.shiro.service.UserAuthService;
+import cn.stylefeng.guns.modular.system.dao.MenuMapper;
+import cn.stylefeng.guns.modular.system.dao.UserMapper;
+import cn.stylefeng.guns.modular.system.model.User;
 import cn.stylefeng.roses.core.util.SpringContextHolder;
 import org.apache.shiro.authc.CredentialsException;
 import org.apache.shiro.authc.LockedAccountException;
@@ -57,11 +57,11 @@ public class UserAuthServiceServiceImpl implements UserAuthService {
 
         User user = userMapper.getByAccount(account);
 
-        // 账号不存�?
+        // 账号不存�?
         if (null == user) {
             throw new CredentialsException();
         }
-        // 账号被冻�?
+        // 账号被冻�?
         if (user.getStatus() != ManagerStatus.OK.getCode()) {
             throw new LockedAccountException();
         }

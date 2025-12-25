@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.core.interceptor;
+package cn.stylefeng.guns.core.interceptor;
 
-import cn.stylefeng.1466951331.core.common.constant.JwtConstants;
-import cn.stylefeng.1466951331.core.common.exception.BizExceptionEnum;
-import cn.stylefeng.1466951331.core.util.JwtTokenUtil;
+import cn.stylefeng.guns.core.common.constant.JwtConstants;
+import cn.stylefeng.guns.core.common.exception.BizExceptionEnum;
+import cn.stylefeng.guns.core.util.JwtTokenUtil;
 import cn.stylefeng.roses.core.reqres.response.ErrorResponseData;
 import cn.stylefeng.roses.core.util.RenderUtil;
 import io.jsonwebtoken.JwtException;

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,17 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.core.common.constant.dictmap.factory;
+package cn.stylefeng.guns.core.common.constant.dictmap.factory;
 
-import cn.stylefeng.1466951331.core.common.constant.factory.ConstantFactory;
-import cn.stylefeng.1466951331.core.common.constant.factory.IConstantFactory;
-import cn.stylefeng.1466951331.core.common.exception.BizExceptionEnum;
+import cn.stylefeng.guns.core.common.constant.factory.ConstantFactory;
+import cn.stylefeng.guns.core.common.constant.factory.IConstantFactory;
+import cn.stylefeng.guns.core.common.exception.BizExceptionEnum;
 import cn.stylefeng.roses.kernel.model.exception.ServiceException;
 
 import java.lang.reflect.Method;
 
 /**
- * 字典字段的包装器(从ConstantFactory中获取包装�?
+ * 字典字段的包装器(从ConstantFactory中获取包装�?
  *
  * @author fengshuonan
  * @date 2017-05-06 15:12

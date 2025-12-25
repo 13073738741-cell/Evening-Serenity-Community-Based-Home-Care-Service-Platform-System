@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.modular.system.dao;
+package cn.stylefeng.guns.modular.system.dao;
 
-import cn.stylefeng.1466951331.modular.system.model.Dict;
+import cn.stylefeng.guns.modular.system.model.Dict;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Param;
 
@@ -24,7 +24,7 @@ import java.util.Map;
 
 /**
  * <p>
- * 字典�?Mapper 接口
+ * 字典�?Mapper 接口
  * </p>
  *
  * @author stylefeng

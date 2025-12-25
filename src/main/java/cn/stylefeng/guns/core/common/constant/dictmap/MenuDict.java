@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.core.common.constant.dictmap;
+package cn.stylefeng.guns.core.common.constant.dictmap;
 
-import cn.stylefeng.1466951331.core.common.constant.dictmap.base.AbstractDictMap;
+import cn.stylefeng.guns.core.common.constant.dictmap.base.AbstractDictMap;
 
 /**
- * 菜单的字�?
+ * 菜单的字�?
  *
  * @author fengshuonan
  * @date 2017-05-06 15:01
@@ -30,14 +30,14 @@ public class MenuDict extends AbstractDictMap {
         put("menuId", "菜单id");
         put("id", "菜单id");
         put("code", "菜单编号");
-        put("pcode", "菜单父编�?);
+        put("pcode", "菜单父编�?);
         put("name", "菜单名称");
         put("icon", "菜单图标");
         put("url", "url地址");
-        put("num", "菜单排序�?);
+        put("num", "菜单排序�?);
         put("levels", "菜单层级");
         put("tips", "备注");
-        put("status", "菜单状�?);
+        put("status", "菜单状�?);
         put("isopen", "是否打开");
         put("", "");
     }

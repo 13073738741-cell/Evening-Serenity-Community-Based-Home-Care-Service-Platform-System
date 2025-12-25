@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.modular.system.warpper;
+package cn.stylefeng.guns.modular.system.warpper;
 
 import cn.hutool.core.util.StrUtil;
-import cn.stylefeng.1466951331.core.common.constant.factory.ConstantFactory;
-import cn.stylefeng.1466951331.modular.system.model.Dict;
+import cn.stylefeng.guns.core.common.constant.factory.ConstantFactory;
+import cn.stylefeng.guns.modular.system.model.Dict;
 import cn.stylefeng.roses.core.base.warpper.BaseControllerWrapper;
 import cn.stylefeng.roses.kernel.model.page.PageResult;
 import com.baomidou.mybatisplus.plugins.Page;
@@ -26,10 +26,10 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 字典列表的包�?
+ * 字典列表的包�?
  *
  * @author fengshuonan
- * @date 2017�?�?5�?18:10:31
+ * @date 2017�?�?5�?18:10:31
  */
 public class DictWarpper extends BaseControllerWrapper {
 

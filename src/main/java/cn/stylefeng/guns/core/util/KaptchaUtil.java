@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.core.util;
+package cn.stylefeng.guns.core.util;
 
-import cn.stylefeng.1466951331.config.properties.1466951331Properties;
+import cn.stylefeng.guns.config.properties.gunsProperties;
 import cn.stylefeng.roses.core.util.SpringContextHolder;
 
 /**
@@ -24,9 +24,9 @@ import cn.stylefeng.roses.core.util.SpringContextHolder;
 public class KaptchaUtil {
 
     /**
-     * 获取验证码开�?
+     * 获取验证码开�?
      */
     public static Boolean getKaptchaOnOff() {
-        return SpringContextHolder.getBean(1466951331Properties.class).getKaptchaOpen();
+        return SpringContextHolder.getBean(gunsProperties.class).getKaptchaOpen();
     }
 }

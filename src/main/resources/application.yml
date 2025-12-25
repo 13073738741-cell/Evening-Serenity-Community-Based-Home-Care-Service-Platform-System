@@ -1,13 +1,13 @@
-server:
+﻿server:
   port: 8080
 
-1466951331:
+guns:
   swagger-open: true              #是否开启swagger (true/false)
-  kaptcha-open: false             #是否开启登录时验证�?(true/false)
+  kaptcha-open: false             #是否开启登录时验证�?(true/false)
   #  file-upload-path: d:/tmp     #文件上传目录(不配置的话为java.io.tmpdir目录)
-  spring-session-open: false      #是否开启spring session,如果是多机环境需要开�?true/false)
+  spring-session-open: false      #是否开启spring session,如果是多机环境需要开�?true/false)
   session-invalidate-time: 1800     #session失效时间(只在单机环境下生效，多机环境在SpringSessionConfig类中配置) 单位：秒
-  session-validation-interval: 900  #多久检测一次失效的session(只在单机环境下生�? 单位：秒
+  session-validation-interval: 900  #多久检测一次失效的session(只在单机环境下生�? 单位：秒
 
 beetl:
   resource-auto-check: true       #热加载beetl模板，开发时候用
@@ -30,30 +30,30 @@ spring:
       max-file-size: 100MB
 
 mybatis-plus:
-  typeAliasesPackage: cn.stylefeng.1466951331.modular.system.model
+  typeAliasesPackage: cn.stylefeng.guns.modular.system.model
 
 log:
-  path: 1466951331-logs
+  path: guns-logs
 
 ---
 
 spring:
   profiles: local
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/1466951331?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
+    url: jdbc:mysql://127.0.0.1:3306/guns?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
     username: root
     password: 123456
     filters: wall,mergeStat
 
-#多数据源情况的配�?
-1466951331:
+#多数据源情况的配�?
+guns:
   muti-datasource:
     open: false
-    url: jdbc:mysql://127.0.0.1:3306/1466951331_test?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
+    url: jdbc:mysql://127.0.0.1:3306/guns_test?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
     username: root
     password: 123456
     dataSourceNames:
-    - dataSource1466951331
+    - dataSourceguns
     - dataSourceBiz
 
 ---
@@ -61,7 +61,7 @@ spring:
 spring:
   profiles: dev
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/1466951331?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
+    url: jdbc:mysql://127.0.0.1:3306/guns?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
     username: root
     password: 123456
     filters: wall,mergeStat
@@ -71,7 +71,7 @@ spring:
 spring:
   profiles: test
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/1466951331?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
+    url: jdbc:mysql://127.0.0.1:3306/guns?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
     username: root
     password: 123456
     filters: wall,mergeStat
@@ -81,7 +81,7 @@ spring:
 spring:
   profiles: produce
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/1466951331?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
+    url: jdbc:mysql://127.0.0.1:3306/guns?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
     username: root
     password: 123456
     filters: wall,mergeStat

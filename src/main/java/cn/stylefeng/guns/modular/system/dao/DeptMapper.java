@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.modular.system.dao;
+package cn.stylefeng.guns.modular.system.dao;
 
-import cn.stylefeng.1466951331.core.common.node.ZTreeNode;
-import cn.stylefeng.1466951331.modular.system.model.Dept;
+import cn.stylefeng.guns.core.common.node.ZTreeNode;
+import cn.stylefeng.guns.modular.system.model.Dept;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Param;
 
@@ -25,7 +25,7 @@ import java.util.Map;
 
 /**
  * <p>
- * 部门�?Mapper 接口
+ * 部门�?Mapper 接口
  * </p>
  *
  * @author stylefeng
@@ -34,12 +34,12 @@ import java.util.Map;
 public interface DeptMapper extends BaseMapper<Dept> {
 
     /**
-     * 获取ztree的节点列�?
+     * 获取ztree的节点列�?
      */
     List<ZTreeNode> tree();
 
     /**
-     * 获取所有部门列�?
+     * 获取所有部门列�?
      */
     List<Map<String, Object>> list(@Param("condition") String condition);
 

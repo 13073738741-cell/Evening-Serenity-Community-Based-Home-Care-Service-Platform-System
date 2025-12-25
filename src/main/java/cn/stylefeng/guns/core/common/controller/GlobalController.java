@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.core.common.controller;
+package cn.stylefeng.guns.core.common.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,14 +23,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * 全局的控制器
  *
  * @author fengshuonan
- * @date 2016�?1�?3�?下午11:04:45
+ * @date 2016�?1�?3�?下午11:04:45
  */
 @Controller
 @RequestMapping("/global")
 public class GlobalController {
 
     /**
-     * 跳转�?04页面
+     * 跳转�?04页面
      *
      * @author fengshuonan
      */

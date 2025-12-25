@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.core.common.constant.dictmap;
+package cn.stylefeng.guns.core.common.constant.dictmap;
 
-import cn.stylefeng.1466951331.core.common.constant.dictmap.base.AbstractDictMap;
+import cn.stylefeng.guns.core.common.constant.dictmap.base.AbstractDictMap;
 
 /**
- * 角色的字�?
+ * 角色的字�?
  *
  * @author fengshuonan
  * @date 2017-05-06 15:01
@@ -29,7 +29,7 @@ public class RoleDict extends AbstractDictMap {
     public void init() {
         put("roleId", "角色名称");
         put("num", "角色排序");
-        put("pid", "角色的父�?);
+        put("pid", "角色的父�?);
         put("name", "角色名称");
         put("deptid", "部门名称");
         put("tips", "备注");

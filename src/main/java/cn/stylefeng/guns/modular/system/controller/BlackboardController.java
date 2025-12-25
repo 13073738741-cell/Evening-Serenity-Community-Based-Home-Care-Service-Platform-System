@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.modular.system.controller;
+package cn.stylefeng.guns.modular.system.controller;
 
-import cn.stylefeng.1466951331.modular.system.service.INoticeService;
+import cn.stylefeng.guns.modular.system.service.INoticeService;
 import cn.stylefeng.roses.core.base.controller.BaseController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -29,7 +29,7 @@ import java.util.Map;
  * 总览信息
  *
  * @author fengshuonan
- * @Date 2017�?�?�?3:05:54
+ * @Date 2017�?�?�?3:05:54
  */
 @Controller
 @RequestMapping("/blackboard")
@@ -39,7 +39,7 @@ public class BlackboardController extends BaseController {
     private INoticeService noticeService;
 
     /**
-     * 跳转到黑�?
+     * 跳转到黑�?
      */
     @RequestMapping("")
     public String blackboard(Model model) {

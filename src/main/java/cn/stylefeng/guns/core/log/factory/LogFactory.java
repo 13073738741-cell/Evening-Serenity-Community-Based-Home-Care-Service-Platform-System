@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.core.log.factory;
+package cn.stylefeng.guns.core.log.factory;
 
-import cn.stylefeng.1466951331.core.common.constant.state.LogSucceed;
-import cn.stylefeng.1466951331.core.common.constant.state.LogType;
-import cn.stylefeng.1466951331.modular.system.model.LoginLog;
-import cn.stylefeng.1466951331.modular.system.model.OperationLog;
+import cn.stylefeng.guns.core.common.constant.state.LogSucceed;
+import cn.stylefeng.guns.core.common.constant.state.LogType;
+import cn.stylefeng.guns.modular.system.model.LoginLog;
+import cn.stylefeng.guns.modular.system.model.OperationLog;
 
 import java.util.Date;
 
@@ -26,7 +26,7 @@ import java.util.Date;
  * 日志对象创建工厂
  *
  * @author fengshuonan
- * @date 2016�?2�?�?下午9:18:27
+ * @date 2016�?2�?�?下午9:18:27
  */
 public class LogFactory {
 

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331;
+package cn.stylefeng.guns;
 
 import cn.stylefeng.roses.core.config.WebAutoConfiguration;
 import org.slf4j.Logger;
@@ -22,18 +22,18 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * SpringBoot方式启动�?
+ * SpringBoot方式启动�?
  *
  * @author stylefeng
  * @Date 2017/5/21 12:06
  */
 @SpringBootApplication(exclude = WebAutoConfiguration.class)
-public class 1466951331Application {
+public class gunsApplication {
 
-    private final static Logger logger = LoggerFactory.getLogger(1466951331Application.class);
+    private final static Logger logger = LoggerFactory.getLogger(gunsApplication.class);
 
     public static void main(String[] args) {
-        SpringApplication.run(1466951331Application.class, args);
-        logger.info("1466951331Application is success!");
+        SpringApplication.run(gunsApplication.class, args);
+        logger.info("gunsApplication is success!");
     }
 }

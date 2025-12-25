@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.modular.system.service;
+package cn.stylefeng.guns.modular.system.service;
 
-import cn.stylefeng.1466951331.core.common.node.ZTreeNode;
-import cn.stylefeng.1466951331.modular.system.model.Dept;
+import cn.stylefeng.guns.core.common.node.ZTreeNode;
+import cn.stylefeng.guns.modular.system.model.Dept;
 import com.baomidou.mybatisplus.service.IService;
 
 import java.util.List;
@@ -36,12 +36,12 @@ public interface IDeptService extends IService<Dept> {
     void deleteDept(Integer deptId);
 
     /**
-     * 获取ztree的节点列�?
+     * 获取ztree的节点列�?
      */
     List<ZTreeNode> tree();
 
     /**
-     * 获取所有部门列�?
+     * 获取所有部门列�?
      */
     List<Map<String, Object>> list(String condition);
 }

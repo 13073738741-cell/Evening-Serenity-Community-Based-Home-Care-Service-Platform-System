@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.modular.system.service;
+package cn.stylefeng.guns.modular.system.service;
 
-import cn.stylefeng.1466951331.core.common.node.MenuNode;
-import cn.stylefeng.1466951331.core.common.node.ZTreeNode;
-import cn.stylefeng.1466951331.modular.system.model.Menu;
+import cn.stylefeng.guns.core.common.node.MenuNode;
+import cn.stylefeng.guns.core.common.node.ZTreeNode;
+import cn.stylefeng.guns.modular.system.model.Menu;
 import com.baomidou.mybatisplus.service.IService;
 
 import java.util.List;
@@ -51,7 +51,7 @@ public interface IMenuService extends IService<Menu> {
      * 根据条件查询菜单
      *
      * @return
-     * @date 2017�?�?2�?下午9:14:34
+     * @date 2017�?�?2�?下午9:14:34
      */
     List<Map<String, Object>> selectMenus(String condition, String level);
 
@@ -59,23 +59,23 @@ public interface IMenuService extends IService<Menu> {
      * 根据条件查询菜单
      *
      * @return
-     * @date 2017�?�?2�?下午9:14:34
+     * @date 2017�?�?2�?下午9:14:34
      */
     List<Long> getMenuIdsByRoleId(Integer roleId);
 
     /**
-     * 获取菜单列表�?
+     * 获取菜单列表�?
      *
      * @return
-     * @date 2017�?�?9�?下午1:33:51
+     * @date 2017�?�?9�?下午1:33:51
      */
     List<ZTreeNode> menuTreeList();
 
     /**
-     * 获取菜单列表�?
+     * 获取菜单列表�?
      *
      * @return
-     * @date 2017�?�?9�?下午1:33:51
+     * @date 2017�?�?9�?下午1:33:51
      */
     List<ZTreeNode> menuTreeListByMenuIds(List<Long> menuIds);
 
@@ -84,7 +84,7 @@ public interface IMenuService extends IService<Menu> {
      *
      * @param menuId
      * @return
-     * @date 2017�?�?9�?下午4:10:59
+     * @date 2017�?�?9�?下午4:10:59
      */
     int deleteRelationByMenu(Long menuId);
 
@@ -93,7 +93,7 @@ public interface IMenuService extends IService<Menu> {
      *
      * @param roleId
      * @return
-     * @date 2017�?�?9�?下午7:12:38
+     * @date 2017�?�?9�?下午7:12:38
      */
     List<String> getResUrlsByRoleId(Integer roleId);
 
@@ -102,7 +102,7 @@ public interface IMenuService extends IService<Menu> {
      *
      * @param roleIds
      * @return
-     * @date 2017�?�?9�?下午10:35:40
+     * @date 2017�?�?9�?下午10:35:40
      */
     List<MenuNode> getMenusByRoleIds(List<Integer> roleIds);
 }

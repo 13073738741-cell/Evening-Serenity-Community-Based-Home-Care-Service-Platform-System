@@ -1,4 +1,4 @@
-package cn.stylefeng.1466951331.modular.system.model;
+﻿package cn.stylefeng.guns.modular.system.model;
 
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableId;
@@ -39,7 +39,7 @@ public class OperationLog extends Model<OperationLog> {
      */
     private Integer userid;
     /**
-     * 类名�?
+     * 类名�?
      */
     private String classname;
     /**

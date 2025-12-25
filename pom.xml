@@ -9,12 +9,12 @@
         <version>2.0.1.RELEASE</version>
     </parent>
 
-    <groupId>cn.stylefeng.1466951331</groupId>
-    <artifactId>1466951331</artifactId>
+    <groupId>cn.stylefeng.guns</groupId>
+    <artifactId>guns</artifactId>
     <version>1.0.0</version>
 
-    <name>1466951331-admin</name>
-    <description>1466951331 的spring boot版本</description>
+    <name>guns-admin</name>
+    <description>guns 的spring boot版本</description>
 
     <packaging>jar</packaging>
 
@@ -34,10 +34,10 @@
 
     <dependencies>
 
-        <!--代码生成�?->
+        <!--代码生成器-->
         <dependency>
-            <groupId>cn.stylefeng.1466951331</groupId>
-            <artifactId>1466951331-generator</artifactId>
+            <groupId>cn.stylefeng.guns</groupId>
+            <artifactId>guns-generator</artifactId>
             <version>1.0.0</version>
         </dependency>
 
@@ -82,7 +82,7 @@
             <optional>true</optional>
         </dependency>
 
-        <!--shiro依赖和缓�?->
+        <!--shiro依赖和缓存-->
         <dependency>
             <groupId>org.apache.shiro</groupId>
             <artifactId>shiro-core</artifactId>
@@ -116,7 +116,7 @@
             <version>${ehcache.version}</version>
         </dependency>
 
-        <!--验证�?->
+        <!--验证码-->
         <dependency>
             <groupId>com.github.penggle</groupId>
             <artifactId>kaptcha</artifactId>

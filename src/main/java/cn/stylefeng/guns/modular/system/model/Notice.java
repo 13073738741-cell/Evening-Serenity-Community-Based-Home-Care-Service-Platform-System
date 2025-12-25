@@ -1,4 +1,4 @@
-package cn.stylefeng.1466951331.modular.system.model;
+﻿package cn.stylefeng.guns.modular.system.model;
 
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableId;
@@ -10,7 +10,7 @@ import java.util.Date;
 
 /**
  * <p>
- * 通知�?
+ * 通知�?
  * </p>
  *
  * @author stylefeng
@@ -43,7 +43,7 @@ public class Notice extends Model<Notice> {
      */
     private Date createtime;
     /**
-     * 创建�?
+     * 创建�?
      */
     private Integer creater;
 

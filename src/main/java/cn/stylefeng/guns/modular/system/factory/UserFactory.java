@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.modular.system.factory;
+package cn.stylefeng.guns.modular.system.factory;
 
-import cn.stylefeng.1466951331.modular.system.model.User;
-import cn.stylefeng.1466951331.modular.system.transfer.UserDto;
+import cn.stylefeng.guns.modular.system.model.User;
+import cn.stylefeng.guns.modular.system.transfer.UserDto;
 import cn.stylefeng.roses.core.util.ToolUtil;
 import org.springframework.beans.BeanUtils;
 

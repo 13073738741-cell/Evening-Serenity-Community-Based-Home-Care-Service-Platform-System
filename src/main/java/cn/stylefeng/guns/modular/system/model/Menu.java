@@ -1,4 +1,4 @@
-package cn.stylefeng.1466951331.modular.system.model;
+﻿package cn.stylefeng.guns.modular.system.model;
 
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableId;
@@ -10,7 +10,7 @@ import java.io.Serializable;
 
 /**
  * <p>
- * 菜单�?
+ * 菜单�?
  * </p>
  *
  * @author stylefeng
@@ -31,7 +31,7 @@ public class Menu extends Model<Menu> {
      */
     private String code;
     /**
-     * 菜单父编�?
+     * 菜单父编�?
      */
     private String pcode;
     /**
@@ -53,7 +53,7 @@ public class Menu extends Model<Menu> {
     @NotBlank
     private String url;
     /**
-     * 菜单排序�?
+     * 菜单排序�?
      */
     private Integer num;
     /**
@@ -69,7 +69,7 @@ public class Menu extends Model<Menu> {
      */
     private String tips;
     /**
-     * 菜单状�?:  1:启用   0:不启�?
+     * 菜单状�?:  1:启用   0:不启�?
      */
     private Integer status;
     /**

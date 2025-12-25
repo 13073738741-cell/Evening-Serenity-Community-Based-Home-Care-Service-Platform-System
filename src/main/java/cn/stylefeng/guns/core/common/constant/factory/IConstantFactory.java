@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.core.common.constant.factory;
+package cn.stylefeng.guns.core.common.constant.factory;
 
-import cn.stylefeng.1466951331.modular.system.model.Dict;
+import cn.stylefeng.guns.modular.system.model.Dict;
 
 import java.util.List;
 
 /**
- * 常量生产工厂的接�?
+ * 常量生产工厂的接�?
  *
  * @author fengshuonan
  * @date 2017-06-14 21:12
@@ -39,7 +39,7 @@ public interface IConstantFactory {
      * 根据用户id获取用户账号
      *
      * @author stylefeng
-     * @date 2017�?�?6�?1:55:371
+     * @date 2017�?�?6�?1:55:371
      */
     String getUserAccountById(Integer userId);
 
@@ -99,12 +99,12 @@ public interface IConstantFactory {
     String getSexName(Integer sex);
 
     /**
-     * 获取用户登录状�?
+     * 获取用户登录状�?
      */
     String getStatusName(Integer status);
 
     /**
-     * 获取菜单状�?
+     * 获取菜单状�?
      */
     String getMenuStatusName(Integer status);
 

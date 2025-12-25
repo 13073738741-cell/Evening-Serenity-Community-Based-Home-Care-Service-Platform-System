@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.core.beetl;
+package cn.stylefeng.guns.core.beetl;
 
-import cn.stylefeng.1466951331.core.tag.DictSelectorTag;
-import cn.stylefeng.1466951331.core.util.KaptchaUtil;
+import cn.stylefeng.guns.core.tag.DictSelectorTag;
+import cn.stylefeng.guns.core.util.KaptchaUtil;
 import cn.stylefeng.roses.core.util.ToolUtil;
 import org.beetl.core.Context;
 import org.beetl.core.Function;

@@ -1,9 +1,9 @@
-package cn.stylefeng.1466951331.multi.service.impl;
+﻿package cn.stylefeng.guns.multi.service.impl;
 
-import cn.stylefeng.1466951331.core.common.constant.DatasourceEnum;
-import cn.stylefeng.1466951331.multi.entity.Test;
-import cn.stylefeng.1466951331.multi.mapper.TestMapper;
-import cn.stylefeng.1466951331.multi.service.TestService;
+import cn.stylefeng.guns.core.common.constant.DatasourceEnum;
+import cn.stylefeng.guns.multi.entity.Test;
+import cn.stylefeng.guns.multi.mapper.TestMapper;
+import cn.stylefeng.guns.multi.service.TestService;
 import cn.stylefeng.roses.core.mutidatasource.annotion.DataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 /**
  * <p>
- * 服务实现�?
+ * 服务实现�?
  * </p>
  *
  * @author fengshuonan
@@ -33,11 +33,11 @@ public class TestServiceImpl implements TestService {
     }
 
     @Override
-    @DataSource(name = DatasourceEnum.DATA_SOURCE_1466951331)
+    @DataSource(name = DatasourceEnum.DATA_SOURCE_guns)
     @Transactional
-    public void test1466951331() {
+    public void testguns() {
         Test test = new Test();
-        test.setBbb("1466951331Test");
+        test.setBbb("gunsTest");
         testMapper.insert(test);
     }
 }

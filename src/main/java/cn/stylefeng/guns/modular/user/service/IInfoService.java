@@ -1,11 +1,11 @@
-package cn.stylefeng.1466951331.modular.user.service;
+﻿package cn.stylefeng.guns.modular.user.service;
 
-import cn.stylefeng.1466951331.modular.system.model.Info;
+import cn.stylefeng.guns.modular.system.model.Info;
 import com.baomidou.mybatisplus.service.IService;
 
 /**
  * <p>
- *  服务�?
+ *  服务�?
  * </p>
  *
  * @author zxx

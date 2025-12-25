@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>1466951331 - 登录</title>
+    <title>guns - 登录</title>
 
     <link rel="shortcut icon" href="${ctxPath}/static/favicon.ico">
     <link href="${ctxPath}/static/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
@@ -24,12 +24,12 @@
         <div>
             <h1 class="logo-name">GS</h1>
         </div>
-        <h3>欢迎使用社区养老医疗综合服务平�?/h3>
+        <h3>欢迎使用社区养老医疗综合服务平�?/h3>
         <br/>
         <h4 style="color: red;">${tips!}</h4>
         <form class="m-t" role="form" action="${ctxPath}/login" method="post">
             <div class="form-group">
-                <input type="text" name="username" class="form-control" placeholder="用户�? required="">
+                <input type="text" name="username" class="form-control" placeholder="用户�? required="">
             </div>
             <div class="form-group">
                 <input type="password" name="password" class="form-control" placeholder="密码" required="">
@@ -37,7 +37,7 @@
             @if(kaptcha.getKaptchaOnOff() == true){
             <div class="form-group" style="float: left;">
                 <div class="col-sm-8" style="padding-left: 0px; padding-right: 0px;">
-                    <input class="form-control" type="text" name="kaptcha" placeholder="验证�? required="">
+                    <input class="form-control" type="text" name="kaptcha" placeholder="验证�? required="">
                 </div>
                 <div class="col-sm-4" style="padding-left: 0px; padding-right: 0px;">
                     <img src="${ctxPath}/kaptcha" id="kaptcha" width="100%" height="100%"/>
@@ -47,11 +47,11 @@
             <div class="form-group" style="float: left;">
                 <div class="checkbox" style="text-align: left">
                     <label>
-                        <input type="checkbox" name="remember" style="margin-top: 2px;">记住�?
+                        <input type="checkbox" name="remember" style="margin-top: 2px;">记住�?
                     </label>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary block full-width m-b">�?�?/button>
+            <button type="submit" class="btn btn-primary block full-width m-b">�?�?/button>
             </p>
         </form>
     </div>

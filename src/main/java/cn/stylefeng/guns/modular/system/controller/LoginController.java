@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,19 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.modular.system.controller;
+package cn.stylefeng.guns.modular.system.controller;
 
-import cn.stylefeng.1466951331.core.common.exception.InvalidKaptchaException;
-import cn.stylefeng.1466951331.core.common.node.MenuNode;
-import cn.stylefeng.1466951331.core.log.LogManager;
-import cn.stylefeng.1466951331.core.log.factory.LogTaskFactory;
-import cn.stylefeng.1466951331.core.shiro.ShiroKit;
-import cn.stylefeng.1466951331.core.shiro.ShiroUser;
-import cn.stylefeng.1466951331.core.util.ApiMenuFilter;
-import cn.stylefeng.1466951331.core.util.KaptchaUtil;
-import cn.stylefeng.1466951331.modular.system.model.User;
-import cn.stylefeng.1466951331.modular.system.service.IMenuService;
-import cn.stylefeng.1466951331.modular.system.service.IUserService;
+import cn.stylefeng.guns.core.common.exception.InvalidKaptchaException;
+import cn.stylefeng.guns.core.common.node.MenuNode;
+import cn.stylefeng.guns.core.log.LogManager;
+import cn.stylefeng.guns.core.log.factory.LogTaskFactory;
+import cn.stylefeng.guns.core.shiro.ShiroKit;
+import cn.stylefeng.guns.core.shiro.ShiroUser;
+import cn.stylefeng.guns.core.util.ApiMenuFilter;
+import cn.stylefeng.guns.core.util.KaptchaUtil;
+import cn.stylefeng.guns.modular.system.model.User;
+import cn.stylefeng.guns.modular.system.service.IMenuService;
+import cn.stylefeng.guns.modular.system.service.IUserService;
 import cn.stylefeng.roses.core.base.controller.BaseController;
 import cn.stylefeng.roses.core.util.ToolUtil;
 import com.google.code.kaptcha.Constants;
@@ -42,10 +42,10 @@ import java.util.List;
 import static cn.stylefeng.roses.core.util.HttpContext.getIp;
 
 /**
- * 登录控制�?
+ * 登录控制�?
  *
  * @author fengshuonan
- * @Date 2017�?�?0�?下午8:25:24
+ * @Date 2017�?�?0�?下午8:25:24
  */
 @Controller
 public class LoginController extends BaseController {
@@ -57,7 +57,7 @@ public class LoginController extends BaseController {
     private IUserService userService;
 
     /**
-     * 跳转到主�?
+     * 跳转到主�?
      */
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index(Model model) {
@@ -84,7 +84,7 @@ public class LoginController extends BaseController {
     }
 
     /**
-     * 跳转到登录页�?
+     * 跳转到登录页�?
      */
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String login() {
@@ -96,7 +96,7 @@ public class LoginController extends BaseController {
     }
 
     /**
-     * 点击登录执行的动�?
+     * 点击登录执行的动�?
      */
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public String loginVali() {
@@ -105,7 +105,7 @@ public class LoginController extends BaseController {
         String password = super.getPara("password").trim();
         String remember = super.getPara("remember");
 
-        //验证验证码是否正�?
+        //验证验证码是否正�?
         if (KaptchaUtil.getKaptchaOnOff()) {
             String kaptcha = super.getPara("kaptcha").trim();
             String code = (String) super.getSession().getAttribute(Constants.KAPTCHA_SESSION_KEY);
@@ -137,7 +137,7 @@ public class LoginController extends BaseController {
     }
 
     /**
-     * 退出登�?
+     * 退出登�?
      */
     @RequestMapping(value = "/logout", method = RequestMethod.GET)
     public String logOut() {

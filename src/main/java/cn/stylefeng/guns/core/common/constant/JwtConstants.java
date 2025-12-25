@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.core.common.constant;
+package cn.stylefeng.guns.core.common.constant;
 
 /**
  * jwt相关配置
@@ -29,6 +29,6 @@ public interface JwtConstants {
 
     Long EXPIRATION = 604800L;
 
-    String AUTH_PATH = "/1466951331Api/auth";
+    String AUTH_PATH = "/gunsApi/auth";
 
 }

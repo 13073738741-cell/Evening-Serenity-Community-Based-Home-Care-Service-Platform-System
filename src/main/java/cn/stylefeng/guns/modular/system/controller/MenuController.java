@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,21 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.modular.system.controller;
+package cn.stylefeng.guns.modular.system.controller;
 
 import cn.hutool.core.bean.BeanUtil;
-import cn.stylefeng.1466951331.core.common.annotion.BussinessLog;
-import cn.stylefeng.1466951331.core.common.annotion.Permission;
-import cn.stylefeng.1466951331.core.common.constant.Const;
-import cn.stylefeng.1466951331.core.common.constant.dictmap.MenuDict;
-import cn.stylefeng.1466951331.core.common.constant.factory.ConstantFactory;
-import cn.stylefeng.1466951331.core.common.constant.state.MenuStatus;
-import cn.stylefeng.1466951331.core.common.exception.BizExceptionEnum;
-import cn.stylefeng.1466951331.core.common.node.ZTreeNode;
-import cn.stylefeng.1466951331.core.log.LogObjectHolder;
-import cn.stylefeng.1466951331.modular.system.model.Menu;
-import cn.stylefeng.1466951331.modular.system.service.IMenuService;
-import cn.stylefeng.1466951331.modular.system.warpper.MenuWarpper;
+import cn.stylefeng.guns.core.common.annotion.BussinessLog;
+import cn.stylefeng.guns.core.common.annotion.Permission;
+import cn.stylefeng.guns.core.common.constant.Const;
+import cn.stylefeng.guns.core.common.constant.dictmap.MenuDict;
+import cn.stylefeng.guns.core.common.constant.factory.ConstantFactory;
+import cn.stylefeng.guns.core.common.constant.state.MenuStatus;
+import cn.stylefeng.guns.core.common.exception.BizExceptionEnum;
+import cn.stylefeng.guns.core.common.node.ZTreeNode;
+import cn.stylefeng.guns.core.log.LogObjectHolder;
+import cn.stylefeng.guns.modular.system.model.Menu;
+import cn.stylefeng.guns.modular.system.service.IMenuService;
+import cn.stylefeng.guns.modular.system.warpper.MenuWarpper;
 import cn.stylefeng.roses.core.base.controller.BaseController;
 import cn.stylefeng.roses.core.reqres.response.ResponseData;
 import cn.stylefeng.roses.core.util.ToolUtil;
@@ -47,10 +47,10 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 菜单控制�?
+ * 菜单控制�?
  *
  * @author fengshuonan
- * @Date 2017�?�?2�?1:59:14
+ * @Date 2017�?�?2�?1:59:14
  */
 @Controller
 @RequestMapping("/menu")
@@ -62,7 +62,7 @@ public class MenuController extends BaseController {
     private IMenuService menuService;
 
     /**
-     * 跳转到菜单列表列表页�?
+     * 跳转到菜单列表列表页�?
      */
     @RequestMapping("")
     public String index() {
@@ -70,7 +70,7 @@ public class MenuController extends BaseController {
     }
 
     /**
-     * 跳转到菜单列表列表页�?
+     * 跳转到菜单列表列表页�?
      */
     @RequestMapping(value = "/menu_add")
     public String menuAdd() {
@@ -78,7 +78,7 @@ public class MenuController extends BaseController {
     }
 
     /**
-     * 跳转到菜单详情列表页�?
+     * 跳转到菜单详情列表页�?
      */
     @Permission(Const.ADMIN_NAME)
     @RequestMapping(value = "/menu_edit/{menuId}")
@@ -93,7 +93,7 @@ public class MenuController extends BaseController {
         temp.setCode(menu.getPcode());
         Menu pMenu = this.menuService.selectOne(new EntityWrapper<>(temp));
 
-        //如果父级是顶级菜�?
+        //如果父级是顶级菜�?
         if (pMenu == null) {
             menu.setPcode("0");
         } else {
@@ -149,7 +149,7 @@ public class MenuController extends BaseController {
             throw new ServiceException(BizExceptionEnum.REQUEST_NULL);
         }
 
-        //判断是否存在该编�?
+        //判断是否存在该编�?
         String existedMenuName = ConstantFactory.me().getMenuNameByCode(menu.getCode());
         if (ToolUtil.isNotEmpty(existedMenuName)) {
             throw new ServiceException(BizExceptionEnum.EXISTED_THE_MENU);
@@ -175,7 +175,7 @@ public class MenuController extends BaseController {
             throw new ServiceException(BizExceptionEnum.REQUEST_NULL);
         }
 
-        //缓存菜单的名�?
+        //缓存菜单的名�?
         LogObjectHolder.me().set(ConstantFactory.me().getMenuName(menuId));
 
         this.menuService.delMenuContainSubMenus(menuId);
@@ -196,7 +196,7 @@ public class MenuController extends BaseController {
     }
 
     /**
-     * 获取菜单列表(首页�?
+     * 获取菜单列表(首页�?
      */
     @RequestMapping(value = "/menuTreeList")
     @ResponseBody
@@ -205,7 +205,7 @@ public class MenuController extends BaseController {
     }
 
     /**
-     * 获取菜单列表(选择父级菜单�?
+     * 获取菜单列表(选择父级菜单�?
      */
     @RequestMapping(value = "/selectMenuTreeList")
     @ResponseBody
@@ -230,7 +230,7 @@ public class MenuController extends BaseController {
     }
 
     /**
-     * 根据请求的父级菜单编号设置pcode和层�?
+     * 根据请求的父级菜单编号设置pcode和层�?
      */
     private void menuSetPcode(@Valid Menu menu) {
         if (ToolUtil.isEmpty(menu.getPcode()) || menu.getPcode().equals("0")) {

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,19 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.core.shiro.service;
+package cn.stylefeng.guns.core.shiro.service;
 
-import cn.stylefeng.1466951331.core.shiro.ShiroUser;
-import cn.stylefeng.1466951331.modular.system.model.User;
+import cn.stylefeng.guns.core.shiro.ShiroUser;
+import cn.stylefeng.guns.modular.system.model.User;
 import org.apache.shiro.authc.SimpleAuthenticationInfo;
 
 import java.util.List;
 
 /**
- * 定义shirorealm所需数据的接�?
+ * 定义shirorealm所需数据的接�?
  *
  * @author fengshuonan
- * @date 2016�?2�?�?上午10:23:34
+ * @date 2016�?2�?�?上午10:23:34
  */
 public interface UserAuthService {
 
@@ -37,7 +37,7 @@ public interface UserAuthService {
     User user(String account);
 
     /**
-     * 根据系统用户获取Shiro的用�?
+     * 根据系统用户获取Shiro的用�?
      *
      * @param user 系统用户
      */
@@ -58,7 +58,7 @@ public interface UserAuthService {
     String findRoleNameByRoleId(Integer roleId);
 
     /**
-     * 获取shiro的认证信�?
+     * 获取shiro的认证信�?
      */
     SimpleAuthenticationInfo info(ShiroUser shiroUser, User user, String realmName);
 

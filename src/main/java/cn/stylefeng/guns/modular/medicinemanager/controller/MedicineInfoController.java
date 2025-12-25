@@ -1,4 +1,4 @@
-package cn.stylefeng.1466951331.modular.medicinemanager.controller;
+﻿package cn.stylefeng.guns.modular.medicinemanager.controller;
 
 import cn.stylefeng.roses.core.base.controller.BaseController;
 import org.springframework.stereotype.Controller;
@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.beans.factory.annotation.Autowired;
-import cn.stylefeng.1466951331.core.log.LogObjectHolder;
+import cn.stylefeng.guns.core.log.LogObjectHolder;
 import org.springframework.web.bind.annotation.RequestParam;
-import cn.stylefeng.1466951331.modular.system.model.MedicineInfo;
-import cn.stylefeng.1466951331.modular.medicinemanager.service.IMedicineInfoService;
+import cn.stylefeng.guns.modular.system.model.MedicineInfo;
+import cn.stylefeng.guns.modular.medicinemanager.service.IMedicineInfoService;
 
 /**
- * 药物管理控制�?
+ * 药物管理控制�?
  *
  * @author fengshuonan
  * @Date 2018-12-29 16:22:31
@@ -28,7 +28,7 @@ public class MedicineInfoController extends BaseController {
     private IMedicineInfoService medicineInfoService;
 
     /**
-     * 跳转到药物管理首�?
+     * 跳转到药物管理首�?
      */
     @RequestMapping("")
     public String index() {
@@ -36,7 +36,7 @@ public class MedicineInfoController extends BaseController {
     }
 
     /**
-     * 跳转到添加药物管�?
+     * 跳转到添加药物管�?
      */
     @RequestMapping("/medicineInfo_add")
     public String medicineInfoAdd() {
@@ -44,7 +44,7 @@ public class MedicineInfoController extends BaseController {
     }
 
     /**
-     * 跳转到修改药物管�?
+     * 跳转到修改药物管�?
      */
     @RequestMapping("/medicineInfo_update/{medicineInfoId}")
     public String medicineInfoUpdate(@PathVariable Integer medicineInfoId, Model model) {

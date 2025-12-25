@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -16,9 +16,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package cn.stylefeng.1466951331.core.interceptor;
+package cn.stylefeng.guns.core.interceptor;
 
-import cn.stylefeng.1466951331.core.shiro.ShiroKit;
+import cn.stylefeng.guns.core.shiro.ShiroKit;
 import org.apache.shiro.subject.Subject;
 import org.apache.shiro.web.filter.AccessControlFilter;
 import org.apache.shiro.web.util.WebUtils;
@@ -37,7 +37,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @since 0.9
  */
-public class 1466951331UserFilter extends AccessControlFilter {
+public class gunsUserFilter extends AccessControlFilter {
 
     /**
      * Returns <code>true</code> if the request is a
@@ -80,7 +80,7 @@ public class 1466951331UserFilter extends AccessControlFilter {
         } else {
 
             /**
-             * 第一次点击页�?
+             * 第一次点击页�?
              */
             String referer = httpServletRequest.getHeader("Referer");
             if (referer == null) {

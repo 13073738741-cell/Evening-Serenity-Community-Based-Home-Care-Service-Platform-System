@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.config;
+package cn.stylefeng.guns.config;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 
@@ -24,7 +24,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
  * @date 2017-07-13 21:05
  */
 //@EnableRedisHttpSession(maxInactiveIntervalInSeconds = 1800)  //session过期时间  如果部署多机环境,需要打开注释
-@ConditionalOnProperty(prefix = "1466951331", name = "spring-session-open", havingValue = "true")
+@ConditionalOnProperty(prefix = "guns", name = "spring-session-open", havingValue = "true")
 public class SpringSessionConfig {
 
 }

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.core.common.constant.state;
+package cn.stylefeng.guns.core.common.constant.state;
 
 /**
- * 数据库排�?
+ * 数据库排�?
  *
  * @author fengshuonan
- * @Date 2017�?�?1�?0:48:41
+ * @Date 2017�?�?1�?0:48:41
  */
 public enum Order {
 

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,21 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331;
+package cn.stylefeng.guns;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 /**
- * 1466951331 Web程序启动�?
+ * guns Web程序启动�?
  *
  * @author fengshuonan
  * @date 2017-05-21 9:43
  */
-public class 1466951331ServletInitializer extends SpringBootServletInitializer {
+public class gunsServletInitializer extends SpringBootServletInitializer {
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return builder.sources(1466951331Application.class);
+        return builder.sources(gunsApplication.class);
     }
 }

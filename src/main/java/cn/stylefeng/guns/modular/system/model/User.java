@@ -1,4 +1,4 @@
-package cn.stylefeng.1466951331.modular.system.model;
+﻿package cn.stylefeng.guns.modular.system.model;
 
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableId;
@@ -39,7 +39,7 @@ public class User extends Model<User> {
      */
     private String password;
     /**
-     * md5密码�?
+     * md5密码�?
      */
     private String salt;
     /**
@@ -51,7 +51,7 @@ public class User extends Model<User> {
      */
     private Date birthday;
     /**
-     * 性别�?：男 2：女�?
+     * 性别�?：男 2：女�?
      */
     private Integer sex;
     /**
@@ -71,7 +71,7 @@ public class User extends Model<User> {
      */
     private Integer deptid;
     /**
-     * 状�?1：启�? 2：冻�? 3：删除）
+     * 状�?1：启�? 2：冻�? 3：删除）
      */
     private Integer status;
     /**

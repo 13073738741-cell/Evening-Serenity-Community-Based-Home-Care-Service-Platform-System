@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.core.common.annotion;
+package cn.stylefeng.guns.core.common.annotion;
 
-import cn.stylefeng.1466951331.core.common.constant.dictmap.base.AbstractDictMap;
-import cn.stylefeng.1466951331.core.common.constant.dictmap.base.SystemDict;
+import cn.stylefeng.guns.core.common.constant.dictmap.base.AbstractDictMap;
+import cn.stylefeng.guns.core.common.constant.dictmap.base.SystemDict;
 
 import java.lang.annotation.*;
 
 /**
- * 标记需要做业务日志的方�?
+ * 标记需要做业务日志的方�?
  *
  * @author fengshuonan
  * @date 2017-03-31 12:46
@@ -32,17 +32,17 @@ import java.lang.annotation.*;
 public @interface BussinessLog {
 
     /**
-     * 业务的名�?例如:"修改菜单"
+     * 业务的名�?例如:"修改菜单"
      */
     String value() default "";
 
     /**
-     * 被修改的实体的唯一标识,例如:菜单实体的唯一标识�?id"
+     * 被修改的实体的唯一标识,例如:菜单实体的唯一标识�?id"
      */
     String key() default "id";
 
     /**
-     * 字典(用于查找key的中文名称和字段的中文名�?
+     * 字典(用于查找key的中文名称和字段的中文名�?
      */
     Class<? extends AbstractDictMap> dict() default SystemDict.class;
 }

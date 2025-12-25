@@ -1,4 +1,4 @@
-package cn.stylefeng.1466951331.modular.system.model;
+﻿package cn.stylefeng.guns.modular.system.model;
 
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableId;

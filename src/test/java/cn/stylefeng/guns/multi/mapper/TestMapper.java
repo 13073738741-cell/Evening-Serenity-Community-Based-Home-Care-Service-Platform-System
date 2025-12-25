@@ -1,6 +1,6 @@
-package cn.stylefeng.1466951331.multi.mapper;
+﻿package cn.stylefeng.guns.multi.mapper;
 
-import cn.stylefeng.1466951331.multi.entity.Test;
+import cn.stylefeng.guns.multi.entity.Test;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 
 /**

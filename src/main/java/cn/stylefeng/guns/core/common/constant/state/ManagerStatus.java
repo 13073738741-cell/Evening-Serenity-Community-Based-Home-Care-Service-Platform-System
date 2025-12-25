@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,17 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.core.common.constant.state;
+package cn.stylefeng.guns.core.common.constant.state;
 
 /**
- * 管理员的状�?
+ * 管理员的状�?
  *
  * @author fengshuonan
- * @Date 2017�?�?0�?下午9:54:13
+ * @Date 2017�?�?0�?下午9:54:13
  */
 public enum ManagerStatus {
 
-    OK(1, "启用"), FREEZED(2, "冻结"), DELETED(3, "被删�?);
+    OK(1, "启用"), FREEZED(2, "冻结"), DELETED(3, "被删�?);
 
     int code;
     String message;

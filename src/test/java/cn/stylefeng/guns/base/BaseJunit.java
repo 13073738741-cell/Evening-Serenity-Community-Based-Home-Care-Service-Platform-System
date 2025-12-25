@@ -1,6 +1,6 @@
-package cn.stylefeng.1466951331.base;
+﻿package cn.stylefeng.guns.base;
 
-import cn.stylefeng.1466951331.1466951331Application;
+import cn.stylefeng.guns.gunsApplication;
 import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,15 +13,15 @@ import org.springframework.web.context.WebApplicationContext;
 
 
 /**
- * 基础测试�?
+ * 基础测试�?
  *
  * @author stylefeng
  * @Date 2017/5/21 16:10
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = 1466951331Application.class)
+@SpringBootTest(classes = gunsApplication.class)
 @WebAppConfiguration
-//@Transactional //打开的话测试之后数据可自动回�?
+//@Transactional //打开的话测试之后数据可自动回�?
 public class BaseJunit {
 
     @Autowired

@@ -1,4 +1,4 @@
-package cn.stylefeng.1466951331.shiro;
+﻿package cn.stylefeng.guns.shiro;
 
 import org.springframework.util.Base64Utils;
 
@@ -8,11 +8,11 @@ import java.util.Arrays;
 public class Base64Test {
 
     /**
-     * Shiro 记住密码采用的是AES加密，AES key length 需要是16位，该方法生�?6位的key
+     * Shiro 记住密码采用的是AES加密，AES key length 需要是16位，该方法生�?6位的key
      */
     public static void main(String[] args) {
 
-        String keyStr = "1466951331";
+        String keyStr = "guns";
 
         byte[] keys;
         try {

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.core.common.constant.dictmap.base;
+package cn.stylefeng.guns.core.common.constant.dictmap.base;
 
 import java.util.HashMap;
 
 /**
- * 字典映射抽象�?
+ * 字典映射抽象�?
  *
  * @author fengshuonan
  * @date 2017-05-06 14:58
@@ -35,7 +35,7 @@ public abstract class AbstractDictMap {
     }
 
     /**
-     * 初始化字段英文名称和中文名称对应的字�?
+     * 初始化字段英文名称和中文名称对应的字�?
      *
      * @author stylefeng
      * @Date 2017/5/9 19:39
@@ -43,7 +43,7 @@ public abstract class AbstractDictMap {
     public abstract void init();
 
     /**
-     * 初始化需要被包装的字�?例如:性别�?:�?2:�?需要被包装为汉�?
+     * 初始化需要被包装的字�?例如:性别�?:�?2:�?需要被包装为汉�?
      *
      * @author stylefeng
      * @Date 2017/5/9 19:35

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.stylefeng.1466951331.modular.system.dao.OperationLogMapper">
+<mapper namespace="cn.stylefeng.guns.modular.system.dao.OperationLogMapper">
 
 	<!-- 通用查询映射结果 -->
-	<resultMap id="BaseResultMap" type="cn.stylefeng.1466951331.modular.system.model.OperationLog">
+	<resultMap id="BaseResultMap" type="cn.stylefeng.guns.modular.system.model.OperationLog">
 		<id column="id" property="id" />
 		<result column="logtype" property="logtype" />
 		<result column="logname" property="logname" />

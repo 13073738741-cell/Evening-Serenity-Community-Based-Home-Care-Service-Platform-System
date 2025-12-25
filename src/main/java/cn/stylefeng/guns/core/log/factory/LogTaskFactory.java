@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.core.log.factory;
+package cn.stylefeng.guns.core.log.factory;
 
-import cn.stylefeng.1466951331.core.common.constant.state.LogSucceed;
-import cn.stylefeng.1466951331.core.common.constant.state.LogType;
-import cn.stylefeng.1466951331.core.log.LogManager;
-import cn.stylefeng.1466951331.modular.system.dao.LoginLogMapper;
-import cn.stylefeng.1466951331.modular.system.dao.OperationLogMapper;
-import cn.stylefeng.1466951331.modular.system.model.LoginLog;
-import cn.stylefeng.1466951331.modular.system.model.OperationLog;
+import cn.stylefeng.guns.core.common.constant.state.LogSucceed;
+import cn.stylefeng.guns.core.common.constant.state.LogType;
+import cn.stylefeng.guns.core.log.LogManager;
+import cn.stylefeng.guns.modular.system.dao.LoginLogMapper;
+import cn.stylefeng.guns.modular.system.dao.OperationLogMapper;
+import cn.stylefeng.guns.modular.system.model.LoginLog;
+import cn.stylefeng.guns.modular.system.model.OperationLog;
 import cn.stylefeng.roses.core.util.SpringContextHolder;
 import cn.stylefeng.roses.core.util.ToolUtil;
 import org.slf4j.Logger;
@@ -33,7 +33,7 @@ import java.util.TimerTask;
  * 日志操作任务创建工厂
  *
  * @author fengshuonan
- * @date 2016�?2�?�?下午9:18:27
+ * @date 2016�?2�?�?下午9:18:27
  */
 public class LogTaskFactory {
 
@@ -78,7 +78,7 @@ public class LogTaskFactory {
                 try {
                     loginLogMapper.insert(loginLog);
                 } catch (Exception e) {
-                    logger.error("创建退出日志异�?", e);
+                    logger.error("创建退出日志异�?", e);
                 }
             }
         };

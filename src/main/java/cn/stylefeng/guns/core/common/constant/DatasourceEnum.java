@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,17 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.core.common.constant;
+package cn.stylefeng.guns.core.common.constant;
 
 /**
- * 多数据源的枚�?
+ * 多数据源的枚�?
  *
  * @author fengshuonan
- * @date 2017�?�?�?上午10:15:02
+ * @date 2017�?�?�?上午10:15:02
  */
 public interface DatasourceEnum {
 
-    String DATA_SOURCE_1466951331 = "dataSource1466951331";            //1466951331数据�?
+    String DATA_SOURCE_guns = "dataSourceguns";            //guns数据�?
 
     String DATA_SOURCE_BIZ = "dataSourceBiz";            //其他业务的数据源
 }

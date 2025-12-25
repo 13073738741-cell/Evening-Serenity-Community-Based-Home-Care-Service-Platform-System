@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright 2018-2020 stylefeng & fengshuonan (https://gitee.com/stylefeng)
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.1466951331.modular.system.dao;
+package cn.stylefeng.guns.modular.system.dao;
 
-import cn.stylefeng.1466951331.core.common.node.ZTreeNode;
-import cn.stylefeng.1466951331.modular.system.model.Role;
+import cn.stylefeng.guns.core.common.node.ZTreeNode;
+import cn.stylefeng.guns.modular.system.model.Role;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Param;
 
@@ -25,7 +25,7 @@ import java.util.Map;
 
 /**
  * <p>
- * 角色�?Mapper 接口
+ * 角色�?Mapper 接口
  * </p>
  *
  * @author stylefeng
@@ -37,32 +37,32 @@ public interface RoleMapper extends BaseMapper<Role> {
      * 根据条件查询角色列表
      *
      * @return
-     * @date 2017�?�?2�?下午9:14:34
+     * @date 2017�?�?2�?下午9:14:34
      */
     List<Map<String, Object>> selectRoles(@Param("condition") String condition);
 
     /**
-     * 删除某个角色的所有权�?
+     * 删除某个角色的所有权�?
      *
      * @param roleId 角色id
      * @return
-     * @date 2017�?�?3�?下午7:57:51
+     * @date 2017�?�?3�?下午7:57:51
      */
     int deleteRolesById(@Param("roleId") Integer roleId);
 
     /**
-     * 获取角色列表�?
+     * 获取角色列表�?
      *
      * @return
-     * @date 2017�?�?8�?上午10:32:04
+     * @date 2017�?�?8�?上午10:32:04
      */
     List<ZTreeNode> roleTreeList();
 
     /**
-     * 获取角色列表�?
+     * 获取角色列表�?
      *
      * @return
-     * @date 2017�?�?8�?上午10:32:04
+     * @date 2017�?�?8�?上午10:32:04
      */
     List<ZTreeNode> roleTreeListByRoleId(String[] roleId);
 }
